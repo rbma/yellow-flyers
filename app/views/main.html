@@ -1,1 +1,11 @@
-<h1>Yo</h1>
+<section class="wrapper" ng-if="ready">
+  <div ng-repeat="flyer in flyers" class="flyer" style="background:url({{image.full(flyer.mainimagelink)}})">
+    <div class="thumbnails">
+      <ul>
+        <li><img ng-src="{{image.full(flyer.image1)}}"></li>
+        <li><img ng-src="{{image.full(flyer.image2)}}"></li>
+        <li><img ng-src="{{image.full(flyer.image3)}}"></li>
+      </ul>
+    </div>
+  </div>
+</section>

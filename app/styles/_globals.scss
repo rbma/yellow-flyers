@@ -1,0 +1,23 @@
+html{
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+ng-view, .ng-scope{
+	width: 100%;
+	height: 100%;
+}
+
+.wrapper{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background: black;
+	margin: 0;
+}
