@@ -9,7 +9,7 @@
  */
 angular.module('yellowFlyersApp').directive('modalBox', ['$rootScope', function ($rootScope) {
 	
-	var link = function($scope, element, attrs){
+	var link = function($scope, element){
 
 		$scope.modalImages = [];
 
@@ -18,6 +18,8 @@ angular.module('yellowFlyersApp').directive('modalBox', ['$rootScope', function 
 		//modal properties
 		$scope.modal = {
 			open: false,
+			//used to store how many images are in array
+			count: 0,
 			openModal: function(imgIndex, parentIndex){
 				var self = this;
 				self.open = true;
@@ -25,6 +27,7 @@ angular.module('yellowFlyersApp').directive('modalBox', ['$rootScope', function 
 
 				//displayed image should be selected one coming though, parent collection shoudl be ready
 				$scope.modalImages = $scope.flyers[parentIndex].subimages.split(', ');
+				self.count = $scope.modalImages.length;
 				$scope.modalSelect = imgIndex;
 				$rootScope.$broadcast('bindZoom');
 
@@ -32,6 +35,10 @@ angular.module('yellowFlyersApp').directive('modalBox', ['$rootScope', function 
 			closeModal: function(){
 				var self = this;
 				self.open = false;
+
+				//clear out scope
+				$scope.modalImages = [];
+				$scope.modalSelect = null;
 				//broadcast message to unbind zoom
 				$rootScope.$broadcast('unbindZoom');
 			},
@@ -44,6 +51,21 @@ angular.module('yellowFlyersApp').directive('modalBox', ['$rootScope', function 
 					shadow: '0 0 5px #000',
 					border: '1px solid black'
 				});
+			},
+			advance: function(){
+				alert('advance');
+			},
+			rewind: function(){
+				$rootScope.$broadcast('unbindZoom');
+				var self = this;
+				if ($scope.modalSelect > 0){
+					$scope.modalSelect--;
+				}
+				else{
+					$scope.modalSelect = self.count - 1;
+				}
+				$rootScope.$broadcast('bindZoom');
+				
 			}
 		};
 	};

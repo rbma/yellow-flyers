@@ -4,10 +4,43 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
+	.exit{
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		z-index: 9999;
+		.fa{
+			font-size: 2em;
+			color: black !important;
+			display: block; 
+			z-index: 99999999;
+		}
+	}
 	.modal-image-wrapper{
 		width: 100%;
 		height: 100%;
 		//keep image aspect
+		
+		.arrow{
+			color: black;
+			display: inline-block;
+			position: absolute;
+			z-index: 999999999;
+			font-size: 3em;
+			top: 48%;
+			@include display(flex);
+			@include flex-direction(row);
+			@include align-items(center);
+			width: 95%;
+			left: 2.5%;
+			&.left{
+				@include justify-content(flex-start);
+			}
+			&.right{
+				@include justify-content(flex-end);
+			}
+		}
+
 		.modal-image{
 			position: absolute;
 			background: white;
@@ -21,7 +54,7 @@
 			@include align-items(center);
 			right: 0;
 			img{
-				height: 90%;
+				height: 80%;
 				max-width: 100%;
 				max-height: 100%;
 			}
