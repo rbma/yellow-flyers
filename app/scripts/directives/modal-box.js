@@ -52,10 +52,24 @@ angular.module('yellowFlyersApp').directive('modalBox', ['$rootScope', function 
 					border: '1px solid black'
 				});
 			},
+
 			advance: function(){
-				alert('advance');
+				image.removeClass('ng-hide-remove ng-hide-add');
+				$rootScope.$broadcast('unbindZoom');
+
+				var self = this;
+
+				if ($scope.modalSelect < self.count - 1){
+					$scope.modalSelect++;
+				}
+				else{
+					$scope.modalSelect = 0;
+				}
+				$rootScope.$broadcast('bindZoom');
 			},
+
 			rewind: function(){
+				image.removeClass('ng-hide-remove ng-hide-add');
 				$rootScope.$broadcast('unbindZoom');
 				var self = this;
 				if ($scope.modalSelect > 0){

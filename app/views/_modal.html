@@ -3,10 +3,11 @@
 		<i class="fa fa-close"></i>
 	</div>
 	<div class="modal-image-wrapper">
+		<i class="fa fa-circle-o-notch fa-spin"></i>
 		<i class="arrow right fa fa-angle-right" ng-click="modal.advance()"></i>
 		<i class="arrow left fa fa-angle-left" ng-click="modal.rewind()"></i>
 		<div class="modal-image">
-			<img ng-src="{{image.full(modalImages[modalSelect])}}" zoom-load/>
+			<img class="animate-show" ng-src="{{image.full(modalImages[modalSelect])}}" zoom-load/>
 		</div>
 	</div>
 </section>

@@ -1,17 +1,22 @@
 <section class="wrapper" ng-if="ready">
-  
 
-  <div ng-repeat="flyer in flyers" class="flyer" style="background:url({{image.full(flyer.mainimagelink)}})">
-    
-    <div class="thumbnails">
-      <ul ng-hide="modal.open">
-      	<li ng-repeat="thumbnail in flyer.thumbnails">
-      		<!--send in image position in array, as well as parent element-->
-      		<img ng-src="{{image.full(thumbnail)}}" ng-click="modal.openModal($index, $parent.$index)"/>
-      	</li>
-      </ul>
-      <modal-box ng-hide="!modal.open"></modal-box>
-    </div>
-  </div>
+	<div ng-repeat="flyer in flyers" class="flyer" style="background:url({{image.full(flyer.mainimagelink)}})">
+ 
+	    <div class="thumbnails">
+	    	<h2 class="date-title" ng-hide="modal.open">{{flyer.date}}</h2>
+	    	<p class="description" ng-hide="modal.open">{{flyer.description}}</p>
+	    	<ul ng-hide="modal.open">
+	      		<li ng-repeat="thumbnail in flyer.thumbnails">
+	      			<!--send in image position in array, as well as parent element-->
+	      			<img ng-src="{{image.full(thumbnail)}}" ng-click="modal.openModal($index, $parent.$index)"/>
+	      			<p>Page {{$index + 1}}</p>
+	      		</li>
+	      	</ul>
+	      	<modal-box ng-hide="!modal.open"></modal-box>
+	    </div>
+
+
+  	</div>
+
 
 </section>

@@ -1,6 +1,7 @@
 'use strict';
 
 /* global Tabletop:false */
+/* global moment:false */
 
 /**
  * @ngdoc function
@@ -61,6 +62,10 @@ angular.module('yellowFlyersApp').controller('MainCtrl', ['$scope', '$interval',
 					for (var i = 0; i < $scope.flyers.length; i++ ){
 						//if values exists only
 						var array = $scope.flyers[i].subimages.split(', ');
+
+						//convert dates
+						var date = moment(new Date($scope.flyers[i].date)).format('MMMM YYYY');
+						$scope.flyers[i].date = date;
 						
 						//add thumbnail extension to each item in array
 						for (var t = 0; t < array.length; t++ ){
