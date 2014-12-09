@@ -9,7 +9,27 @@
 angular.module('yellowFlyersApp').directive('modalBox', function () {
 	
 	var link = function($scope, element, attrs){
-		// console.log(attrs);
+
+		$scope.modalImages = [];
+		
+		//modal properties
+		$scope.modal = {
+			open: false,
+			openModal: function(imgIndex, parentIndex){
+				var self = this;
+				self.open = true;
+				console.log(imgIndex, parentIndex);
+
+				//displayed image should be selected one coming though, parent collection shoudl be ready
+				$scope.modalImages = $scope.flyers[parentIndex].subimages.split(', ');
+				$scope.modalSelect = imgIndex;
+
+			},
+			closeModal: function(){
+				var self = this;
+				self.open = false;
+			}
+		};
 	};
 
 

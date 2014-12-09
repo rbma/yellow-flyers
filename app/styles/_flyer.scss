@@ -8,7 +8,7 @@
 	height: 200% !important;
 	background-size: contain !important;
 	background-position: top left;
-	background-repeat: repeat-x !important;
+	background-repeat: repeat-y !important;
 	background-attachment: fixed !important;
 	.thumbnails{
 		position: absolute;
@@ -27,8 +27,8 @@
 			list-style-type: none;
 			li{
 				display: inline-block;
-				width: 300px;
-				height: 400px;
+				width: 330px;
+				height: 200px;
 				overflow: hidden;
 				margin: 10px;
 				box-shadow: 2px 2px 5px black;

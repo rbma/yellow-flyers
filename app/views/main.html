@@ -5,8 +5,9 @@
     
     <div class="thumbnails">
       <ul ng-hide="modal.open">
-      	<li ng-repeat="thumbnail in flyer.subimages">
-      		<img ng-src="{{image.full(thumbnail)}}" ng-click="modal.openModal(thumbnail)"/>
+      	<li ng-repeat="thumbnail in flyer.thumbnails">
+      		<!--send in image position in array, as well as parent element-->
+      		<img ng-src="{{image.full(thumbnail)}}" ng-click="modal.openModal($index, $parent.$index)"/>
       	</li>
       </ul>
       <modal-box ng-hide="!modal.open"></modal-box>

@@ -33,21 +33,6 @@ angular.module('yellowFlyersApp').controller('MainCtrl', ['$scope', '$interval',
 	$scope.ready = true;
 
 	
-
-	$scope.modal = {
-		open: false,
-		openModal: function(){
-			var self = this;
-			self.open = true;
-		},
-		closeModal: function(){
-			var self = this;
-			self.open = false;
-		}
-	};
-
-	
-
 	
 
 	//if google hangs, keep checking
@@ -57,6 +42,8 @@ angular.module('yellowFlyersApp').controller('MainCtrl', ['$scope', '$interval',
 	}, 3000);
 
 	
+	
+
 	//data store
 	function tabletop(){
 		Tabletop.init({
@@ -73,10 +60,14 @@ angular.module('yellowFlyersApp').controller('MainCtrl', ['$scope', '$interval',
 					//convert comma separated values to array
 					for (var i = 0; i < $scope.flyers.length; i++ ){
 						//if values exists only
-						if ($scope.flyers[i].subimages){
-							var array = $scope.flyers[i].subimages.split(', ');
-							$scope.flyers[i].subimages = array;
+						var array = $scope.flyers[i].subimages.split(', ');
+						
+						//add thumbnail extension to each item in array
+						for (var t = 0; t < array.length; t++ ){
+							array[t] = array[t] + '_thumb';
 						}
+
+						$scope.flyers[i].thumbnails = array;
 					}
 				});
 			}
