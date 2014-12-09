@@ -1,11 +1,16 @@
 <section class="wrapper" ng-if="ready">
+  
+
   <div ng-repeat="flyer in flyers" class="flyer" style="background:url({{image.full(flyer.mainimagelink)}})">
+    
     <div class="thumbnails">
-      <ul>
-        <li><img ng-src="{{image.full(flyer.image1)}}"></li>
-        <li><img ng-src="{{image.full(flyer.image2)}}"></li>
-        <li><img ng-src="{{image.full(flyer.image3)}}"></li>
+      <ul ng-hide="modal.open">
+        <li><img ng-src="{{image.full(flyer.image1)}}" ng-click="modal.openModal(flyer.image1)"></li>
+        <li><img ng-src="{{image.full(flyer.image2)}}" ng-click="modal.openModal(flyer.image2)"></li>
+        <li><img ng-src="{{image.full(flyer.image3)}}" ng-click="modal.openModal(flyer.image3)"></li>
       </ul>
+      <modal-box ng-hide="!modal.open"></modal-box>
     </div>
   </div>
+
 </section>

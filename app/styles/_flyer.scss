@@ -17,7 +17,7 @@
 		width: 100%;
 		height: 50%;
 		z-index: 2;
-		@include background(linear-gradient($gray, white) left repeat);
+		background: rgba(255,255,255,0.8);
 		@include display(flex);
 		@include flex-direction(row);
 		@include justify-content(center);
@@ -32,10 +32,13 @@
 				overflow: hidden;
 				margin: 10px;
 				box-shadow: 2px 2px 5px black;
+				@include transition(transform .2s linear);
+				&:hover{
+					@include transform(scale(1.05));
+				}
 				img{
 					height: 100%;
 					width: auto;
-
 				}
 			}
 		}

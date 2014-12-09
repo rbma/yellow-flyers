@@ -9,7 +9,10 @@
  * # MainCtrl
  * Controller of the yellowFlyersApp
  */
-angular.module('yellowFlyersApp').controller('MainCtrl', ['$scope', '$interval', function ($scope, $interval) {
+angular.module('yellowFlyersApp').controller('MainCtrl', ['$scope', '$interval',  function ($scope, $interval) {
+
+	
+	
 
 	//container for all image props and functions
 	$scope.image = {};
@@ -28,6 +31,24 @@ angular.module('yellowFlyersApp').controller('MainCtrl', ['$scope', '$interval',
 
 	//flag for spinner
 	$scope.ready = true;
+
+	
+
+	$scope.modal = {
+		open: false,
+		openModal: function(){
+			var self = this;
+			self.open = true;
+		},
+		closeModal: function(){
+			var self = this;
+			self.open = false;
+		}
+	};
+
+	$scope.modal.open = false;
+
+	
 
 	
 
