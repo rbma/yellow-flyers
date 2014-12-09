@@ -9,7 +9,7 @@
 angular.module('yellowFlyersApp').directive('modalBox', function () {
 	
 	var link = function($scope, element, attrs){
-		console.log(attrs);
+		// console.log(attrs);
 	};
 
 

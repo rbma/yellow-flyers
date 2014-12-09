@@ -5,9 +5,9 @@
     
     <div class="thumbnails">
       <ul ng-hide="modal.open">
-        <li><img ng-src="{{image.full(flyer.image1)}}" ng-click="modal.openModal(flyer.image1)"></li>
-        <li><img ng-src="{{image.full(flyer.image2)}}" ng-click="modal.openModal(flyer.image2)"></li>
-        <li><img ng-src="{{image.full(flyer.image3)}}" ng-click="modal.openModal(flyer.image3)"></li>
+      	<li ng-repeat="thumbnail in flyer.subimages">
+      		<img ng-src="{{image.full(thumbnail)}}" ng-click="modal.openModal(thumbnail)"/>
+      	</li>
       </ul>
       <modal-box ng-hide="!modal.open"></modal-box>
     </div>

@@ -46,8 +46,6 @@ angular.module('yellowFlyersApp').controller('MainCtrl', ['$scope', '$interval',
 		}
 	};
 
-	$scope.modal.open = false;
-
 	
 
 	
@@ -72,6 +70,14 @@ angular.module('yellowFlyersApp').controller('MainCtrl', ['$scope', '$interval',
 					$scope.flyers = data.Flyers.elements;
 					console.log($scope.flyers);
 
+					//convert comma separated values to array
+					for (var i = 0; i < $scope.flyers.length; i++ ){
+						//if values exists only
+						if ($scope.flyers[i].subimages){
+							var array = $scope.flyers[i].subimages.split(', ');
+							$scope.flyers[i].subimages = array;
+						}
+					}
 				});
 			}
 		});
