@@ -20,6 +20,11 @@ ng-view, .ng-scope{
     cursor: pointer !important;
 }
 
+//disable scrollbar on webkit
+::-webkit-scrollbar { 
+    display: none; 
+}
+
 
 .wrapper{
 	width: 100%;

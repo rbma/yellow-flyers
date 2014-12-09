@@ -1,6 +1,9 @@
-<section class="modal" style="background:url({{image.full(modalImages[modalSelect])}})">
-	<div class="exit" ng-click="modal.closeModal()">
-		<i class="fa fa-close"></i>
+<section class="modal" ng-click="modal.closeModal()">
+	<div class="modal-image-wrapper">
+		<div class="modal-image">
+			<img ng-src="{{image.full(modalImages[modalSelect])}}" zoom-load/>
+		</div>
 	</div>
 </section>
 
+ 

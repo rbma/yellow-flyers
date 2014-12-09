@@ -10,7 +10,8 @@
     "angular-route": "~1.2.0",
     "bourbon": "~4.0.2",
     "normalize.css": "~3.0.2",
-    "tabletop": "~1.3.5"
+    "tabletop": "~1.3.5",
+    "okzoom": "*"
   },
   "devDependencies": {
     "angular-mocks": "~1.2.0",
