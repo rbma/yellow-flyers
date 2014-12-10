@@ -68,8 +68,9 @@ angular.module('yellowFlyersApp').controller('MainCtrl', ['$scope', '$interval',
 
 						//if values exists only
 						if (!self.description || !self.date || !self.subimages){
-							$scope.alert = true;
-							return;
+							
+							//remove this item
+							$scope.flyers.slice(-1,1);
 						}
 						else{
 							//turn images into array

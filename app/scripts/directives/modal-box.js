@@ -14,10 +14,6 @@ angular.module('yellowFlyersApp').directive('modalBox', ['$rootScope', function 
 		$scope.modalImages = [];
 
 		var image = element.find('.modal-image img');
-
-		$scope.$watch('modal', function(newVal){
-			console.log(newVal.open);
-		});
 		
 		//modal properties
 		$scope.modal = {

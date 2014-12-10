@@ -172,6 +172,23 @@ module.exports = function (grunt) {
       }
     },
 
+    
+     //AWS
+    aws: grunt.file.readJSON('env.json'),
+
+    s3: {
+      options:{
+        accessKeyId: '<%= aws.accessKeyId %>',
+        secretAccessKey: '<%= aws.secretAccessKey %>',
+        bucket: '<%= aws.bucket %>'
+      },
+
+      build:{
+        cwd: 'dist/',
+        src: '**'
+      }
+    },
+
     // Compiles Sass to CSS and generates necessary files if requested
     compass: {
       options: {
