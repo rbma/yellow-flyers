@@ -4,58 +4,16 @@
 	top: 0;
 	left: 0;
 	width: 100% !important;
-	height: 200% !important;
+	height: 100% !important;
 	background-size: contain !important;
 	background-position: top left;
 	background-repeat: repeat-x !important;
 	background-attachment: fixed !important;
-	.thumbnails{
-		position: absolute;
-		top: 50%;
-		left: 0;
-		width: 100%;
-		height: 50%;
-		z-index: 2;
-		background: rgba(255,255,255,1);
-		background: url(../images/photocopy.jpg) no-repeat center center;
-		background-size: cover;
-		@include display(flex);
-		@include flex-direction(column);
-		@include justify-content(center);
-		@include align-items(center);
-		p.description{
-			width: 80%;
-			font-size: 1.2em;
-			max-width: 960px;
-			line-height: 1.5;
-		}
-		ul{
-			padding: none;
-			list-style-type: none;
-			max-width: 960px;
-			text-align: center;
-			li{
-				display: inline-block;
-				width: 20%;
-				height: 250px;
-				overflow: hidden;
-				margin: 10px;
-				
-				@include transition(transform .2s linear);
-				&:hover{
-					@include transform(scale(1.05));
-				}
-				img{
-					width: 99%;
-					height: auto;
-					box-shadow: 2px 2px 5px black;
-				}
-				p{
-					z-index: 99;
-					text-align: center;
-					font-weight: lighter;
-				}
-			}
-		}
+	.title{
+		background-color: black;
+		color: white;
+		display: inline-block;
+		padding: 10px;
+		margin-left: 20px;
 	}
 }

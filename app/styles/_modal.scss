@@ -1,9 +1,13 @@
 .modal{
-	position: relative;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
+	z-index: 99;
+	// background:url(../images/photocopy.jpg) no-repeat center center;
+	background: $trans;
+	background-size: cover;
 	.exit{
 		position: absolute;
 		top: 20px;
