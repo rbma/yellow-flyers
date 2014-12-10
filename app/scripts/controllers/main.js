@@ -68,6 +68,10 @@ angular.module('yellowFlyersApp').controller('MainCtrl', ['$scope', '$interval',
 						//convert dates
 						var date = moment(new Date(self.date)).format('MMMM YYYY');
 						self.date = date;
+
+						var array = self.subimages.split(', ');
+
+						$scope.flyers[i].thumbnails = array;
 						
 
 						//if values exists only
@@ -75,11 +79,6 @@ angular.module('yellowFlyersApp').controller('MainCtrl', ['$scope', '$interval',
 							
 							//remove this item
 							$scope.flyers.slice(-1,1);
-						}
-						else{
-							//turn images into array
-							var array = self.subimages.split(', ');
-
 						}
 					}
 				});
