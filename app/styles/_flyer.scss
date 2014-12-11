@@ -37,6 +37,10 @@
 		padding: 10px;
 		margin-left: 20px;
 		font-weight: lighter;
+		&:hover{
+			background-color: black;
+			color: white;
+		}
 	}
 	&.intro-flyer{
 		color: white;
