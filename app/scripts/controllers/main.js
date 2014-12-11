@@ -12,7 +12,7 @@
  */
 angular.module('yellowFlyersApp').controller('MainCtrl', ['$scope', '$rootScope', '$interval',  function ($scope, $rootScope, $interval) {
 
-	
+	//TO-DO: RELOAD PAGE IF INTERVAL HITS 5
 	
 
 	//container for all image props and functions
@@ -28,7 +28,15 @@ angular.module('yellowFlyersApp').controller('MainCtrl', ['$scope', '$rootScope'
 		return ($scope.image.imgPrefix + src + $scope.image.imgPost);
 	};
 
+
+	//last flyer accessed in array
+	$scope.last = 0;
+
+	//empty partial array
 	$scope.flyers = [];
+
+	//empty full array
+	$scope.flyersArray = [];
 
 	//flag for spinner
 	$scope.ready = true;
@@ -37,7 +45,7 @@ angular.module('yellowFlyersApp').controller('MainCtrl', ['$scope', '$rootScope'
 
 	$scope.dataIn = false;
 
-	$scope.loading = true;
+	$scope.loading = false;
 
 	
 	
@@ -48,29 +56,28 @@ angular.module('yellowFlyersApp').controller('MainCtrl', ['$scope', '$rootScope'
 		tabletop();
 	}, 3000);
 
-	$scope.loadMore = function(){
-	};
 
-	
-	
+
 
 	//data store
 	function tabletop(){
 		Tabletop.init({
 			key: '1v-aQYwpoUJEcopld4DsYafoOuDXIgJfPepuWwQcd2RY',
 			callback: function(data){
+				
 				//cancel timer once data is in
 				$interval.cancel(init);
 
 				//outside of angular digest, hence apply
 				$scope.$apply(function(){
-					$scope.flyers = data.Flyers.elements;
-					console.log($scope.flyers);
+					
+					//get array of total flyers
+					$scope.flyersArray = data.Flyers.elements;
 
-					//convert comma separated values to array
-					for (var i = 0; i < $scope.flyers.length; i++ ){
+					//clean up data and convert comma separated values to array
+					for (var i = 0; i < $scope.flyersArray.length; i++ ){
 
-						var self = $scope.flyers[i];
+						var self = $scope.flyersArray[i];
 
 						//convert dates
 						var date = moment(new Date(self.date)).format('MMMM YYYY');
@@ -78,21 +85,48 @@ angular.module('yellowFlyersApp').controller('MainCtrl', ['$scope', '$rootScope'
 
 						var array = self.subimages.split(', ');
 
-						$scope.flyers[i].thumbnails = array;
-						
-
-						//if values exists only
-						if (!self.description || !self.date || !self.subimages){
-							
-							//remove this item
-							$scope.flyers.slice(-1,1);
-						}
+						self.thumbnails = array;
 					}
+
+
+					//push first three items into $scope.flyers
+					for (var z = 0; z < 3; z++){
+						$scope.flyers.push($scope.flyersArray[z]);
+						
+					}
+
+					//$scope.flyers = flyersArray;
 					$scope.dataIn = true;
 				});
 			}
 		});
 	}
+
+
+	$scope.loadMore = function(){
+		//grab last item in array
+		$scope.last = $scope.flyers.length - 1;
+						
+
+		//load three more
+		for (var x = 1; x < 4; x++){
+			$scope.flyers.push($scope.flyersArray[$scope.last + x]);
+		}
+		console.log($scope.flyers);
+	};
+
+
+
+
+
+	$scope.$watch('flyers', function(){
+		console.log($scope.flyers.length);
+	});
+
+
+
+
+
 
 	//once flyers are resized, drop loading
 	$rootScope.$on('resized', function(){

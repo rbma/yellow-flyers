@@ -1,17 +1,18 @@
 <section ng-if="loading" class="alert"><h1>Loading</h1></section>
 
-<section class="flyer-wrapper" ng-if="ready">
-	
-	<ul class="infinity" infinite-scroll="loadMore()" set-height>
-		<li class="flyer intro-flyer"><h1>YO</h1></li>
-		<li ng-repeat="flyer in flyers" class="flyer" style="background:url({{image.full(flyer.mainimagelink)}})" ng-click="modal.openModal(0, $index)">
-			<h1 class="title">{{flyer.title}}: {{flyer.date}}</h1>
-		</li>
-	</ul>
+<div class="container">
+
+	<section class="flyer-wrapper" ng-if="ready">
+		
+		<ul class="infinity">
+			<li class="flyer intro-flyer"><h1>YO</h1></li>
+			<li ng-repeat="flyer in flyers" class="flyer" style="background:url({{image.full(flyer.mainimagelink)}})" ng-click="modal.openModal(0, $index)" when-scrolled>
+				<h1 class="title">{{flyer.title}}: {{flyer.date}}</h1>
+			</li>
+		</ul>
 
 
 
-  	<modal-box ng-show="modal.open"></modal-box>
-
-
-</section>
+	  	<modal-box ng-show="modal.open"></modal-box>
+	</section>
+</div>

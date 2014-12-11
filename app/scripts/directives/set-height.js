@@ -13,12 +13,15 @@ angular.module('yellowFlyersApp').directive('setHeight', ['$window', '$timeout',
 		//sets height to 100% of window height for each list item
 		var winHeight = $window.innerHeight;
 
+		//timeout var
 		var t;
 
 		//make sure data is in from Tabletop before running any functions on list
 		var checkData = function(){
+			console.log('checking');
+			console.log(winHeight);
 			if ($scope.dataIn){
-				element.find('li').css({
+				element.css({
 					height: winHeight
 				});
 
@@ -43,17 +46,13 @@ angular.module('yellowFlyersApp').directive('setHeight', ['$window', '$timeout',
 		angular.element($window).bind('resize', function(){
 			winHeight = $window.innerHeight;
 
-			element.find('li').css({
+			element.css({
 				height: winHeight
 			});
 		});
 
 
-		
-		
-		
-
-	};
+	}; //end link
 
 
 	return {
