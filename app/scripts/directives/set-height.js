@@ -6,9 +6,10 @@
  * @description
  * # setHeight
  */
-angular.module('yellowFlyersApp').directive('setHeight', ['$window', '$timeout', function ($window, $timeout) {
+angular.module('yellowFlyersApp').directive('setHeight', ['$window', '$timeout', '$rootScope', function ($window, $timeout, $rootScope) {
 
-	var link = function($scope, element, attrs){
+	var link = function($scope, element){
+
 		//sets height to 100% of window height for each list item
 		var winHeight = $window.innerHeight;
 
@@ -20,18 +21,34 @@ angular.module('yellowFlyersApp').directive('setHeight', ['$window', '$timeout',
 				element.find('li').css({
 					height: winHeight
 				});
-				
+
+
 				//cancel timeout
-				t.cancel();
+				$timeout.cancel(t);
+
+				
+				//send message that resize is done
+				$rootScope.$broadcast('resized');
 
 			}
 			else{
-				t = $timeout(checkData, 500);
+				t = $timeout(checkData, 1000);
 			}
 		};
 
 		//start checking
 		checkData();
+
+		//resize height on window resize
+		angular.element($window).bind('resize', function(){
+			winHeight = $window.innerHeight;
+
+			element.find('li').css({
+				height: winHeight
+			});
+		});
+
+
 		
 		
 		

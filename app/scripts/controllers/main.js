@@ -10,7 +10,7 @@
  * # MainCtrl
  * Controller of the yellowFlyersApp
  */
-angular.module('yellowFlyersApp').controller('MainCtrl', ['$scope', '$interval',  function ($scope, $interval) {
+angular.module('yellowFlyersApp').controller('MainCtrl', ['$scope', '$rootScope', '$interval',  function ($scope, $rootScope, $interval) {
 
 	
 	
@@ -36,6 +36,8 @@ angular.module('yellowFlyersApp').controller('MainCtrl', ['$scope', '$interval',
 	$scope.alert = false;
 
 	$scope.dataIn = false;
+
+	$scope.loading = true;
 
 	
 	
@@ -91,6 +93,11 @@ angular.module('yellowFlyersApp').controller('MainCtrl', ['$scope', '$interval',
 			}
 		});
 	}
+
+	//once flyers are resized, drop loading
+	$rootScope.$on('resized', function(){
+		$scope.loading = false;
+	});
 
 	//initial tabletop call
 	tabletop();
