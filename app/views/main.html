@@ -7,7 +7,8 @@
 		<ul class="infinity">
 			<li class="flyer intro-flyer"><h1>YO</h1></li>
 			<li ng-repeat="flyer in flyers" class="flyer" style="background:url({{image.full(flyer.mainimagelink)}})" ng-click="modal.openModal(0, $index)" when-scrolled>
-				<h1 class="title">{{flyer.title}}: {{flyer.date}}</h1>
+				<h1 class="title"><strong>{{flyer.title}}</strong> / {{flyer.date}} / {{flyer.djs}}</h1>
+
 			</li>
 		</ul>
 

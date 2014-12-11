@@ -15,12 +15,17 @@ angular.module('yellowFlyersApp').directive('whenScrolled', ['$timeout', 'flyerP
 
 		element.waypoint(function(direction){
 			//advance which one we are on if direction is down
-			if (direction === 'down'){
-				flyerPosition.advance();
 
+			//make sure not to trigger unless number is higher than highest count
+
+			if (direction === 'down'){
 				//for every third element, load more
 				var pos = flyerPosition.getCount();
 
+
+				flyerPosition.advance();
+
+			
 				if (pos % 3 === 0){
 					//make sure we don't cross digests
 					$timeout(function(){
@@ -31,7 +36,7 @@ angular.module('yellowFlyersApp').directive('whenScrolled', ['$timeout', 'flyerP
 				}
 			}
 			else{
-				// flyerPosition.decrement();
+				flyerPosition.decrement();
 			}
 		});
 	};

@@ -12,8 +12,7 @@ angular
   .module('yellowFlyersApp', [
     'ngAnimate',
     'ngRoute',
-    'ngSanitize',
-    'infinite-scroll'
+    'ngSanitize'
   ])
   .config(function ($routeProvider) {
     $routeProvider
