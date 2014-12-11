@@ -11,8 +11,6 @@ angular.module('yellowFlyersApp').directive('zoomLoad', ['$rootScope', function 
 		restrict: 'A',
 		link: function($scope, element, attrs){
 
-			console.log(attrs);
-
 			var order = attrs.order;
 
 			//convert order to num
@@ -48,7 +46,6 @@ angular.module('yellowFlyersApp').directive('zoomLoad', ['$rootScope', function 
 				if (order === data){
 					element.addClass('active');
 				}
-				console.log(data);
 			});
 
 		}

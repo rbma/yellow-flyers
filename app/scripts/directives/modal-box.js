@@ -9,14 +9,11 @@
  */
 angular.module('yellowFlyersApp').directive('modalBox', ['$rootScope', function ($rootScope) {
 	
-	var link = function($scope, element){
-
-
+	var link = function($scope){
 
 
 		$scope.modalImages = [];
 
-		var image = element.find('.modal-image img[0]');
 		
 		//modal properties
 		$scope.modal = {

@@ -81,7 +81,9 @@
 			@include align-items(center);
 			right: 0;
 			text-align: center;
+			
 			img{
+				// @include transition(all .5s linear);
 				@include transform(translateX(-3000px));
 				position: absolute;
 				top: 15%;
