@@ -13,21 +13,6 @@
 angular.module('yellowFlyersApp').controller('MainCtrl', ['$scope', '$rootScope', '$interval',  function ($scope, $rootScope, $interval) {
 
 	//TO-DO: RELOAD PAGE IF INTERVAL HITS 5
-	
-
-	//container for all image props and functions
-	$scope.image = {};
-	
-	//prefix
-	$scope.image.imgPrefix = 'https://s3.amazonaws.com/yellow-flyers/';
-	
-	//suffix
-	$scope.image.imgPost = '.jpg';
-
-	$scope.image.full = function(src){
-		return ($scope.image.imgPrefix + src + $scope.image.imgPost);
-	};
-
 
 	//last flyer accessed in array
 	$scope.last = 0;
@@ -46,6 +31,19 @@ angular.module('yellowFlyersApp').controller('MainCtrl', ['$scope', '$rootScope'
 	$scope.dataIn = false;
 
 	$scope.loading = false;
+
+	//container for all image props and functions
+	$scope.image = {};
+	
+	//prefix
+	$scope.image.imgPrefix = 'https://s3.amazonaws.com/yellow-flyers/';
+		
+	//suffix
+	$scope.image.imgPost = '.jpg';
+
+	$scope.image.full = function(src){
+		return ($scope.image.imgPrefix + src + $scope.image.imgPost);
+	};
 
 	
 	
@@ -85,7 +83,14 @@ angular.module('yellowFlyersApp').controller('MainCtrl', ['$scope', '$rootScope'
 
 						var array = self.subimages.split(', ');
 
-						self.thumbnails = array;
+						//run through each image and add prefix and filetype
+						for (var y = 0; y < array.length; y++ ){
+							array[y] = $scope.image.imgPrefix + array[y] + $scope.image.imgPost;
+						}
+
+						
+						//render
+						self.subimages = array;
 					}
 
 
@@ -98,6 +103,7 @@ angular.module('yellowFlyersApp').controller('MainCtrl', ['$scope', '$rootScope'
 					//$scope.flyers = flyersArray;
 					$scope.dataIn = true;
 				});
+
 			}
 		});
 	}
@@ -114,15 +120,6 @@ angular.module('yellowFlyersApp').controller('MainCtrl', ['$scope', '$rootScope'
 		}
 		console.log($scope.flyers);
 	};
-
-
-
-
-
-	$scope.$watch('flyers', function(){
-		console.log($scope.flyers.length);
-	});
-
 
 
 

@@ -1,14 +1,28 @@
 <section class="modal">
+
+
 	<div class="exit" ng-click="modal.closeModal()">
 		<i class="fa fa-close"></i>
 	</div>
+
+
 	<div class="modal-image-wrapper">
-		<i class="fa fa-circle-o-notch fa-spin"></i>
-		<i class="arrow right fa fa-angle-right" ng-click="modal.advance()"></i>
-		<i class="arrow left fa fa-angle-left" ng-click="modal.rewind()"></i>
-		<div class="modal-image">
-			<img class="animate-show" ng-src="{{image.full(modalImages[modalSelect])}}" zoom-load/>
+		
+		<div class="loading-spinner">
+			<i class="fa fa-circle-o-notch fa-spin"></i>
 		</div>
+		
+		<div class="arrows">
+			<i class="arrow right fa fa-angle-right" ng-click="modal.advance()"></i>
+			<i class="arrow left fa fa-angle-left" ng-click="modal.rewind()"></i>
+		</div>
+		
+		<div class="modal-image">
+			<img ng-repeat="image in modalImages" src data-order="{{$index}}" data-img="{{modalImages[$index]}}" zoom-load/>
+			<!-- <img class="animate-show" ng-src="{{image.full(modalImages[modalSelect])}}" zoom-load/> -->
+		</div>
+
+
 	</div>
 </section>
 
