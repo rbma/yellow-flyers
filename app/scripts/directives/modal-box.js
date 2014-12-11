@@ -44,8 +44,6 @@ angular.module('yellowFlyersApp').directive('modalBox', ['$rootScope', function 
 				//currently visible modal image index count
 				$scope.modalSelect = imgIndex;
 				
-				//fire up loupe
-				$rootScope.$broadcast('bindZoom');
 
 			},
 
@@ -64,20 +62,6 @@ angular.module('yellowFlyersApp').directive('modalBox', ['$rootScope', function 
 				//clear out indexed item
 				$scope.modalSelect = 0;
 
-				//broadcast message to unbind loupe
-				$rootScope.$broadcast('unbindZoom');
-			},
-
-			//loupe settings
-			zoom: function(){
-				image.okzoom({
-					width: 200,
-					height: 200,
-					round: true,
-					background: '#ffffff',
-					shadow: '0 0 5px #000',
-					border: '1px solid black'
-				});
 			},
 
 			//next item
@@ -85,12 +69,6 @@ angular.module('yellowFlyersApp').directive('modalBox', ['$rootScope', function 
 
 				var self = this;
 
-
-				//animation settings
-				image.removeClass('ng-hide-remove ng-hide-add');
-
-				//unbind loupe
-				$rootScope.$broadcast('unbindZoom');
 
 				// if item is still less than total subimages length, advance count
 				if ($scope.modalSelect < self.count - 1){
@@ -103,8 +81,6 @@ angular.module('yellowFlyersApp').directive('modalBox', ['$rootScope', function 
 
 				$rootScope.$broadcast('imgChange', $scope.modalSelect);
 
-				//rebind loupe
-				$rootScope.$broadcast('bindZoom');
 			},
 
 
@@ -112,12 +88,7 @@ angular.module('yellowFlyersApp').directive('modalBox', ['$rootScope', function 
 			rewind: function(){
 
 				var self = this;
-
-				//animation shit
-				image.removeClass('ng-hide-remove ng-hide-add');
-				
-				//remove loupe
-				$rootScope.$broadcast('unbindZoom');
+			
 				
 				//if item is greater than zero, rewind one
 				if ($scope.modalSelect > 0){
@@ -130,9 +101,6 @@ angular.module('yellowFlyersApp').directive('modalBox', ['$rootScope', function 
 				}
 
 				$rootScope.$broadcast('imgChange', $scope.modalSelect);
-
-				//hook up loupe again
-				$rootScope.$broadcast('bindZoom');
 				
 			}
 		};

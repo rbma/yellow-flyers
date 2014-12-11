@@ -36,7 +36,7 @@ angular.module('yellowFlyersApp').controller('MainCtrl', ['$scope', '$rootScope'
 	$scope.image = {};
 	
 	//prefix
-	$scope.image.imgPrefix = 'https://s3.amazonaws.com/yellow-flyers/';
+	$scope.image.imgPrefix = '//d1b56a2nqp2zss.cloudfront.net/';
 		
 	//suffix
 	$scope.image.imgPost = '.jpg';

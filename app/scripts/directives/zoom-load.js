@@ -27,12 +27,17 @@ angular.module('yellowFlyersApp').directive('zoomLoad', ['$rootScope', function 
 			//when image is ready, bind to src
 			img.onload = function(){
 				element.attr('src', img.src);
-				console.log(this.width);
+				element.okzoom({
+					width: 300,
+					height: 300,
+					round: true
+				});
 			};
 
 			//show first image
 			if (order === 0){
 				element.addClass('active');
+				
 			}
 
 			//listen for changes
@@ -46,26 +51,6 @@ angular.module('yellowFlyersApp').directive('zoomLoad', ['$rootScope', function 
 				console.log(data);
 			});
 
-
-			
-			//add loupe
-			$rootScope.$on('bindZoom', function(){
-				element.addClass('ng-hide-remove');
-				element.bind('load', function(){
-					element.addClass('ng-hide-add');
-					element.okzoom({
-						width: 300,
-						height: 300,
-						round: true
-					});
-				});
-			});
-			
-			//remove loupe
-			$rootScope.$on('unbindZoom', function(){
-				element.unbind();
-				element.removeClass('ng-hide-remove ng-hide-add');
-			});
 		}
 	};
 }]);
