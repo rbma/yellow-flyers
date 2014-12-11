@@ -35,6 +35,8 @@ angular.module('yellowFlyersApp').controller('MainCtrl', ['$scope', '$interval',
 
 	$scope.alert = false;
 
+	$scope.dataIn = false;
+
 	
 	
 
@@ -43,6 +45,9 @@ angular.module('yellowFlyersApp').controller('MainCtrl', ['$scope', '$interval',
 		console.log('init');
 		tabletop();
 	}, 3000);
+
+	$scope.loadMore = function(){
+	};
 
 	
 	
@@ -81,6 +86,7 @@ angular.module('yellowFlyersApp').controller('MainCtrl', ['$scope', '$interval',
 							$scope.flyers.slice(-1,1);
 						}
 					}
+					$scope.dataIn = true;
 				});
 			}
 		});

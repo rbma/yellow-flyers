@@ -4,27 +4,14 @@
 	<div class="flyer intro-flyer">
 		<h1>YO</h1>
 	</div>
-	<div ng-repeat="flyer in flyers" 
-		class="flyer" 
-		style="background:url({{image.full(flyer.mainimagelink)}})"
-		ng-click="modal.openModal(0, $index)">
-		<h1 class="title">{{flyer.title}}: {{flyer.date}}</h1>
-
- 
-	   <!--  <div class="thumbnails">
-	    	<h2 class="date-title" ng-hide="modal.open">{{flyer.date}}</h2>
-	    	<p class="description" ng-hide="modal.open">{{flyer.description}}</p>
-	    	<ul ng-hide="modal.open">
-	      		<li ng-repeat="thumbnail in flyer.thumbnails">
-	      			<img ng-src="{{image.full(thumbnail)}}" ng-click="modal.openModal($index, $parent.$index)"/>
-	      			<p>Page {{$index + 1}}</p>
-	      		</li>
-	      	</ul>
-	      	
-	    </div> -->
+	<ul class="infinity" infinite-scroll="loadMore()" set-height>
+		<li ng-repeat="flyer in flyers" class="flyer" style="background:url({{image.full(flyer.mainimagelink)}})" ng-click="modal.openModal(0, $index)">
+			<h1 class="title">{{flyer.title}}: {{flyer.date}}</h1>
+		</li>
+	</ul>
 
 
-  	</div>
+
   	<modal-box ng-show="modal.open"></modal-box>
 
 

@@ -9,13 +9,22 @@
 	padding: 0;
 }
 
+.infinity{
+	width: 100%;
+	height: auto;
+	position: relative;
+	margin: 0;
+	list-style-type: none;
+	padding: 0;
+}
+
 
 .flyer{
 	position: relative;
 	top: 0;
 	left: 0;
 	width: 100% !important;
-	height: 100% !important;
+	height: 0;
 	background-size: contain !important;
 	background-position: top left;
 	background-repeat: repeat-x !important;
