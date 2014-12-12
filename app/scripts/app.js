@@ -12,8 +12,13 @@ angular
   .module('yellowFlyersApp', [
     'ngAnimate',
     'ngRoute',
-    'ngSanitize'
+    'ngSanitize',
+    'duScroll'
   ])
+  .value({
+    'duScrollDuration': 5000,
+    'duScrollOffset': 30
+  })
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {

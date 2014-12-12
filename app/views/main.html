@@ -3,11 +3,33 @@
 <div class="container">
 
 	<section class="flyer-wrapper" ng-if="ready">
-		
+		<nav ng-show="!modal.open">
+			<ul class="nav-list">
+				<li><a href="#flyer1" du-smooth-scroll offset="30">1 – 9</a></li>
+				<li><a href="#flyer10" du-smooth-scroll offset="30">10 – 19</a></li>
+				<li><a href="#flyer20" du-smooth-scroll offset="30">20 – 29</a></li>
+				<li><a href="#flyer30" du-smooth-scroll offset="30">30 – 39</a></li>
+				<li><a href="#flyer40" du-smooth-scroll offset="30">40 – 49</a></li>
+				<li><a href="#flyer50" du-smooth-scroll offset="30">50 – 59</a></li>
+				<li><a href="#flyer60" du-smooth-scroll offset="30">60 – 69</a></li>
+				<li><a href="#flyer70" du-smooth-scroll offset="30">70 – 79</a></li>
+				<li><a href="#flyer80" du-smooth-scroll offset="30">80 – 89</a></li>
+				<li><a href="#flyer90" du-smooth-scroll offset="30">90 – 99</a></li>
+				<li><a href="#flyer100" du-smooth-scroll offset="30">100 – 109</a></li>
+				<li><a href="#flyer110" du-smooth-scroll offset="30">110 – 119</a></li>
+				<li><a href="#flyer120" du-smooth-scroll offset="30">120 – 129</a></li>
+				<li><a href="#flyer130" du-smooth-scroll offset="30">130 – 139</a></li>
+				<li><a href="#flyer140" du-smooth-scroll offset="30">140 – 149</a></li>
+				<li><a href="#flyer150" du-smooth-scroll offset="30">150 – 159</a></li>
+				<li><a href="#flyer160" du-smooth-scroll offset="30">160 – 169</a></li>
+				<li><a href="#flyer170" du-smooth-scroll offset="30">170 – 179</a></li>
+				<li><a href="#flyer180" du-smooth-scroll offset="30">180 – 182</a></li>
+			</ul>
+		</nav>
 		<ul class="infinity">
 			<li class="flyer intro-flyer"><h1>YO</h1></li>
 			<!--opening modal with image index set to 0 aka first item-->
-			<li ng-repeat="flyer in flyers" class="flyer" style="background:url({{image.full(flyer.mainimagelink)}})" ng-click="modal.openModal(0, $index)" when-scrolled>
+			<li ng-repeat="flyer in flyers" id="flyer{{$index + 1}}" class="flyer" style="background:url({{image.full(flyer.mainimagelink)}})" ng-click="modal.openModal(0, $index)" when-scrolled>
 				<h1 class="title"><strong>{{flyer.title}}</strong> / {{flyer.date}} / {{flyer.djs}}</h1>
 
 			</li>

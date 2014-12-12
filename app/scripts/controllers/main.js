@@ -118,7 +118,6 @@ angular.module('yellowFlyersApp').controller('MainCtrl', ['$scope', '$rootScope'
 		for (var x = 1; x < 4; x++){
 			$scope.flyers.push($scope.flyersArray[$scope.last + x]);
 		}
-		console.log($scope.flyers);
 	};
 
 

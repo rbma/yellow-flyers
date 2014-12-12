@@ -18,9 +18,13 @@
 		</div>
 		
 		<div class="modal-image">
-			<img ng-repeat="image in modalImages" src data-order="{{$index}}" data-img="{{modalImages[$index]}}" zoom-load/>
-			<!-- <img class="animate-show" ng-src="{{image.full(modalImages[modalSelect])}}" zoom-load/> -->
+			<div class="image-box" ng-repeat="image in modalImages">
+				<img src data-order="{{$index}}" data-img="{{image}}" zoom-load />
+				<h2 class="modal-title">Page {{$index + 1}}</h2>
+			</div>
 		</div>
+
+
 
 
 	</div>

@@ -14,7 +14,8 @@
     "okzoom": "*",
     "moment": "~2.8.4",
     "ngInfiniteScroll": "~1.2.0",
-    "jquery-waypoints": "~2.0.5"
+    "jquery-waypoints": "~2.0.5",
+    "angular-scroll": "~0.6.2"
   },
   "devDependencies": {
     "angular-mocks": "~1.2.0",

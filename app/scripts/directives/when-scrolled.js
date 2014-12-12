@@ -30,7 +30,8 @@ angular.module('yellowFlyersApp').directive('whenScrolled', ['$timeout', 'flyerP
 					//make sure we don't cross digests
 					$timeout(function(){
 						$scope.$apply(function(){
-							$scope.loadMore();
+							//send current position
+							$scope.loadMore(pos);
 						});
 					});
 				}
