@@ -1,0 +1,1206 @@
+[
+  {
+    "title":"Issue 1",
+    "data":"9/1/1992",
+    "djs":"Walter Gibbons, Mr Fingers, David Depino",
+    "mainimagelink":"001_Sep_1992_1",
+    "subimages":"001_Sep_1992_2, 001_Sep_1992_3, 001_Sep_1992_4, 001_Sep_1992_5, 001_Sep_1992_6, 001_Sep_1992_7"
+  },
+  {
+    "title":"Issue 3",
+    "data":"11/1/1992",
+    "djs":"Mr Fingers, Nick Jones",
+    "mainimagelink":"003_Nov_1992_1",
+    "subimages":"003_Nov_1992_2, 003_Nov_1992_3, 003_Nov_1992_4, 003_Nov_1992_5, 003_Nov_1992_6, 003_Nov_1992_7"
+  },
+  {
+    "title":"Issue 4",
+    "data":"12/1/1992",
+    "djs":"Victor Rosado, Chuck Brown, Incognito",
+    "mainimagelink":"004_Dec_1992_1",
+    "subimages":"004_Dec_1992_2, 004_Dec_1992_3, 004_Dec_1992_4, 004_Dec_1992_5, 004_Dec_1992_6"
+  },
+  {
+    "title":"Issue 6",
+    "data":"2/1/1993",
+    "djs":"David Morales, Tee Scott",
+    "mainimagelink":"006_Feb_1993_1",
+    "subimages":"006_Feb_1993_2, 006_Feb_1993_3"
+  },
+  {
+    "title":"Issue 7",
+    "data":"3/1/1993",
+    "djs":"Tee Scott, Satoshi Tomiie, Roy Ayers",
+    "mainimagelink":"007_Mar_1993_1",
+    "subimages":"007_Mar_1993_2, 007_Mar_1993_3"
+  },
+  {
+    "title":"Issue 8",
+    "data":"4/1/1993",
+    "djs":"Nick Jones, Roy Ayers",
+    "mainimagelink":"008_Apr_1993_1",
+    "subimages":"008_Apr_1993_2, 008_Apr_1993_3, 008_Apr_1993_4, 008_Apr_1993_5"
+  },
+  {
+    "title":"Issue 9",
+    "data":"5/1/1993",
+    "djs":"Ken Carpenter, Masters At Work",
+    "mainimagelink":"009_May_1993_1",
+    "subimages":"009_May_1993_2, 009_May_1993_3, 009_May_1993_4, 009_May_1993_5"
+  },
+  {
+    "title":"Issue 10",
+    "data":"6/1/1993",
+    "djs":"Masters At Work",
+    "mainimagelink":"010_Jun_1993_1",
+    "subimages":"010_Jun_1993_2, 010_Jun_1993_3"
+  },
+  {
+    "title":"Issue 12",
+    "data":"8/1/1993",
+    "djs":"David Morales, Inner City, Kevin Saunderson",
+    "mainimagelink":"012_Aug_1993_1",
+    "subimages":"012_Aug_1993_2, 012_Aug_1993_3, 012_Aug_1993_4, 012_Aug_1993_5"
+  },
+  {
+    "title":"Issue 13",
+    "data":"9/1/1993",
+    "djs":"Kerri Chandler, Inner City, Kevin Saunderson, David Morales",
+    "mainimagelink":"013_Sep_1993_1",
+    "subimages":"013_Sep_1993_2, 013_Sep_1993_3, 013_Sep_1993_4, 013_Sep_1993_5"
+  },
+  {
+    "title":"Issue 14",
+    "data":"10/1/1993",
+    "djs":"Frankie Knuckles, David Morales",
+    "mainimagelink":"014_Oct_1993_1",
+    "subimages":"014_Oct_1993_2, 014_Oct_1993_3, 014_Oct_1993_4, 014_Oct_1993_5"
+  },
+  {
+    "title":"Issue 15",
+    "data":"11/1/1993",
+    "djs":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    "mainimagelink":"015_Nov_1993_1",
+    "subimages":"015_Nov_1993_2"
+  },
+  {
+    "title":"Issue 16",
+    "data":"12/1/1993",
+    "djs":"Underground Resistance",
+    "mainimagelink":"016_Dec_1993_1",
+    "subimages":"016_Dec_1993_2, 016_Dec_1993_3"
+  },
+  {
+    "title":"Issue 17",
+    "data":"1/1/1994",
+    "djs":"DJ K.U.D.O.",
+    "mainimagelink":"017_Jan_1994_1",
+    "subimages":"017_Jan_1994_2, 017_Jan_1994_3, 017_Jan_1994_4, 017_Jan_1994_5"
+  },
+  {
+    "title":"Issue 18",
+    "data":"2/1/1994",
+    "djs":"Kerri Chandler",
+    "mainimagelink":"018_Feb_1994_1",
+    "subimages":"018_Feb_1994_2, 018_Feb_1994_3, 018_Feb_1994_4, 018_Feb_1994_5"
+  },
+  {
+    "title":"Issue 19",
+    "data":"3/1/1994",
+    "djs":"DJ K.U.D.O., Juan Atkins, Kerri Chandler",
+    "mainimagelink":"019_Mar_1994_1",
+    "subimages":"019_Mar_1994_2, 019_Mar_1994_3, 019_Mar_1994_4, 019_Mar_1994_5"
+  },
+  {
+    "title":"Issue 20",
+    "data":"4/1/1994",
+    "djs":"Ten City, Ultra Nate, Dave Angel",
+    "mainimagelink":"020_Apr_1994_1",
+    "subimages":"020_Apr_1994_2, 020_Apr_1994_3, 020_Apr_1994_4, 020_Apr_1994_5"
+  },
+  {
+    "title":"Issue 21",
+    "data":"5/1/1994",
+    "djs":"Zero",
+    "mainimagelink":"021_May_1994_1",
+    "subimages":"021_May_1994_2, 021_May_1994_3, 021_May_1994_4, 021_May_1994_5"
+  },
+  {
+    "title":"Issue 22",
+    "data":"6/1/1994",
+    "djs":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    "mainimagelink":"022_Jun_1994_1",
+    "subimages":"022_Jun_1994_2, 022_Jun_1994_3"
+  },
+  {
+    "title":"Issue 23",
+    "data":"7/1/1994",
+    "djs":"Sven Vath, DJ Pierre, Neuromancer",
+    "mainimagelink":"023_Jul_1994_1",
+    "subimages":"023_Jul_1994_2, 023_Jul_1994_3, 023_Jul_1994_4, 023_Jul_1994_5"
+  },
+  {
+    "title":"Issue 24",
+    "data":"8/1/1994",
+    "djs":"Sven Vath, Kenny Dope",
+    "mainimagelink":"024_Aug_1994_1",
+    "subimages":"024_Aug_1994_2, 024_Aug_1994_3, 024_Aug_1994_4, 024_Aug_1994_5"
+  },
+  {
+    "title":"Issue 25",
+    "data":"9/1/1994",
+    "djs":"Kenny Dope, Joey Negro, Ken Carpenter",
+    "mainimagelink":"025_Sep_1994_1",
+    "subimages":"025_Sep_1994_2, 025_Sep_1994_3, 025_Sep_1994_4, 025_Sep_1994_5"
+  },
+  {
+    "title":"Issue 26",
+    "data":"10/1/1994",
+    "djs":"Laurent Garnier, Burning Spear",
+    "mainimagelink":"026_Oct_1994_1",
+    "subimages":"026_Oct_1994_2, 026_Oct_1994_3, 026_Oct_1994_4, 026_Oct_1994_5"
+  },
+  {
+    "title":"Issue 27",
+    "data":"11/1/1994",
+    "djs":"Carl Craig, Joey Negro, DJ Raphael",
+    "mainimagelink":"027_Nov_1994_1",
+    "subimages":"027_Nov_1994_2, 027_Nov_1994_3, 027_Nov_1994_4, 027_Nov_1994_5"
+  },
+  {
+    "title":"Issue 28",
+    "data":"12/1/1994",
+    "djs":"Roger Sanchez, Jeo Claussell, DJ Akai",
+    "mainimagelink":"028_Dec_1994_1",
+    "subimages":"028_Dec_1994_2, 028_Dec_1994_3, 028_Dec_1994_4, 028_Dec_1994_5"
+  },
+  {
+    "title":"Issue 29",
+    "data":"1/1/1995",
+    "djs":"DJ Krush, Roy Ayers, Sven Vath",
+    "mainimagelink":"029_Jan_1995_1",
+    "subimages":"029_Jan_1995_2, 029_Jan_1995_3, 029_Jan_1995_4, 029_Jan_1995_5"
+  },
+  {
+    "title":"Issue 30",
+    "data":"2/1/1995",
+    "djs":"C.J. Macintosh, Brothers In Rhythm, Danny Tengalia",
+    "mainimagelink":"030_Feb_1995_1",
+    "subimages":"030_Feb_1995_2, 030_Feb_1995_3, 030_Feb_1995_4, 030_Feb_1995_5"
+  },
+  {
+    "title":"Issue 31",
+    "data":"3/1/1995",
+    "djs":"Laurent Garnier, DJ Sadao Osada, Danny Tengria",
+    "mainimagelink":"031_Mar_1995_1",
+    "subimages":"031_Mar_1995_2, 031_Mar_1995_3, 031_Mar_1995_4, 031_Mar_1995_5"
+  },
+  {
+    "title":"Issue 32",
+    "data":"4/1/1995",
+    "djs":"DJ Krush, James Lavelle, DJ Akai",
+    "mainimagelink":"032_Apr_1995_1",
+    "subimages":"032_Apr_1995_2, 032_Apr_1995_3, 032_Apr_1995_4, 032_Apr_1995_5"
+  },
+  {
+    "title":"Issue 33",
+    "data":"5/1/1995",
+    "djs":"Blue Train, Mike Huckaby, K-Alexi Shelby",
+    "mainimagelink":"033_May_1995_1",
+    "subimages":"033_May_1995_2, 033_May_1995_3, 033_May_1995_4, 033_May_1995_5"
+  },
+  {
+    "title":"Issue 34",
+    "data":"6/1/1995",
+    "djs":"Kenny Ken, Paul Van Dyk, K-Alexi",
+    "mainimagelink":"034_Jun_1995_1",
+    "subimages":"034_Jun_1995_2, 034_Jun_1995_3, 034_Jun_1995_4, 034_Jun_1995_5"
+  },
+  {
+    "title":"Issue 35",
+    "data":"7/1/1995",
+    "djs":"Cajmere, Francois Kevorkian",
+    "mainimagelink":"035_Jul_1995_1",
+    "subimages":"035_Jul_1995_2, 035_Jul_1995_3, 035_Jul_1995_4, 035_Jul_1995_5"
+  },
+  {
+    "title":"Issue 36",
+    "data":"8/1/1995",
+    "djs":"Cajmere, Cristal Waters",
+    "mainimagelink":"036_Aug_1995_1",
+    "subimages":"036_Aug_1995_2, 036_Aug_1995_3, 036_Aug_1995_4, 036_Aug_1995_5"
+  },
+  {
+    "title":"Issue 37",
+    "data":"9/1/1995",
+    "djs":"Tommy Wada",
+    "mainimagelink":"037_Sep_1995_1",
+    "subimages":"037_Sep_1995_2, 037_Sep_1995_3, 037_Sep_1995_4, 037_Sep_1995_5"
+  },
+  {
+    "title":"Issue 38",
+    "data":"10/1/1995",
+    "djs":"Christian Vogel",
+    "mainimagelink":"038_Oct_1995_1",
+    "subimages":"038_Oct_1995_2, 038_Oct_1995_3, 038_Oct_1995_4, 038_Oct_1995_5"
+  },
+  {
+    "title":"Issue 39",
+    "data":"11/1/1995",
+    "djs":"Sven Vath, Kenny Carpenter, Francois Kevorkian",
+    "mainimagelink":"039_Nov_1995_1",
+    "subimages":"039_Nov_1995_2, 039_Nov_1995_3, 039_Nov_1995_4, 039_Nov_1995_5"
+  },
+  {
+    "title":"Issue 40",
+    "data":"12/1/1995",
+    "djs":"Laurent Garnier, Sven Vath, Kenny Carpenter ",
+    "mainimagelink":"040_Dec_1995_1",
+    "subimages":"040_Dec_1995_2, 040_Dec_1995_3, 040_Dec_1995_4, 040_Dec_1995_5"
+  },
+  {
+    "title":"Issue 41",
+    "data":"1/1/1996",
+    "djs":"L.T.J. Bukem, Victor Rosado, Dimitori",
+    "mainimagelink":"041_Jan_1996_1",
+    "subimages":"041_Jan_1996_2, 041_Jan_1996_3, 041_Jan_1996_4, 041_Jan_1996_5"
+  },
+  {
+    "title":"Issue 42",
+    "data":"2/1/1996",
+    "djs":"Tommy Wada, Claude Young",
+    "mainimagelink":"042_Feb_1996_1",
+    "subimages":"042_Feb_1996_2, 042_Feb_1996_3, 042_Feb_1996_4, 042_Feb_1996_5"
+  },
+  {
+    "title":"Issue 43",
+    "data":"3/1/1996",
+    "djs":"DJ Harvey",
+    "mainimagelink":"043_Mar_1996_1",
+    "subimages":"043_Mar_1996_2, 043_Mar_1996_3, 043_Mar_1996_4, 043_Mar_1996_5"
+  },
+  {
+    "title":"Issue 44",
+    "data":"4/1/1996",
+    "djs":"David Depino",
+    "mainimagelink":"044_Apr_1996_1",
+    "subimages":"044_Apr_1996_2, 044_Apr_1996_3, 044_Apr_1996_4, 044_Apr_1996_5"
+  },
+  {
+    "title":"Issue 45",
+    "data":"5/1/1996",
+    "djs":"Hardfloor, David Depino",
+    "mainimagelink":"045_May_1996_1",
+    "subimages":"045_May_1996_2, 045_May_1996_3, 045_May_1996_4, 045_May_1996_5"
+  },
+  {
+    "title":"Issue 48",
+    "data":"8/1/1996",
+    "djs":"Victor Rosado, Lenny Fontana",
+    "mainimagelink":"048_Aug_1996_1",
+    "subimages":"048_Aug_1996_2, 048_Aug_1996_3, 048_Aug_1996_4, 048_Aug_1996_5"
+  },
+  {
+    "title":"Issue 49",
+    "data":"9/1/1996",
+    "djs":"Joey Llanos, Mijk Van Dijk ",
+    "mainimagelink":"049_Sep_1996_1",
+    "subimages":"049_Sep_1996_2, 049_Sep_1996_3, 049_Sep_1996_4, 049_Sep_1996_5"
+  },
+  {
+    "title":"Issue 50",
+    "data":"10/1/1996",
+    "djs":"Joe Claussell, Frankie Bones, Roger Sanchez",
+    "mainimagelink":"050_Oct_1996_1",
+    "subimages":"050_Oct_1996_2, 050_Oct_1996_3, 050_Oct_1996_4, 050_Oct_1996_5"
+  },
+  {
+    "title":"Issue 51",
+    "data":"11/1/1996",
+    "djs":"DJ 1, DJ 2, DJ 3",
+    "mainimagelink":"051_Nov_1996_1",
+    "subimages":"051_Nov_1996_2, 051_Nov_1996_3, 051_Nov_1996_4, 051_Nov_1996_5"
+  },
+  {
+    "title":"Issue 52",
+    "data":"12/1/1996",
+    "djs":"DJ 1, DJ 2, DJ 4",
+    "mainimagelink":"052_Dec_1996_1",
+    "subimages":"052_Dec_1996_2, 052_Dec_1996_3, 052_Dec_1996_4, 052_Dec_1996_5"
+  },
+  {
+    "title":"Issue 53",
+    "data":"1/1/1997",
+    "djs":"DJ 1, DJ 2, DJ 5",
+    "mainimagelink":"053_Jan_1997_1",
+    "subimages":"053_Jan_1997_2, 053_Jan_1997_3, 053_Jan_1997_4, 053_Jan_1997_5"
+  },
+  {
+    "title":"Issue 54",
+    "data":"2/1/1997",
+    "djs":"DJ 1, DJ 2, DJ 6",
+    "mainimagelink":"054_Feb_1997_1",
+    "subimages":"054_Feb_1997_2, 054_Feb_1997_3, 054_Feb_1997_4, 054_Feb_1997_5"
+  },
+  {
+    "title":"Issue 55",
+    "data":"3/1/1997",
+    "djs":"DJ 1, DJ 2, DJ 7",
+    "mainimagelink":"055_Mar_1997_1",
+    "subimages":"055_Mar_1997_2, 055_Mar_1997_3, 055_Mar_1997_4, 055_Mar_1997_5"
+  },
+  {
+    "title":"Issue 56",
+    "data":"4/1/1997",
+    "djs":"DJ 1, DJ 2, DJ 8",
+    "mainimagelink":"056_Apr_1997_1",
+    "subimages":"056_Apr_1997_2, 056_Apr_1997_3, 056_Apr_1997_4, 056_Apr_1997_5"
+  },
+  {
+    "title":"Issue 57",
+    "data":"5/1/1997",
+    "djs":"DJ 1, DJ 2, DJ 9",
+    "mainimagelink":"057_May_1997_1",
+    "subimages":"057_May_1997_2, 057_May_1997_3, 057_May_1997_4, 057_May_1997_5"
+  },
+  {
+    "title":"Issue 58",
+    "data":"6/1/1997",
+    "djs":"DJ 1, DJ 2, DJ 10",
+    "mainimagelink":"058_Jun_1997_1",
+    "subimages":"058_Jun_1997_2, 058_Jun_1997_3, 058_Jun_1997_4, 058_Jun_1997_5"
+  },
+  {
+    "title":"Issue 59",
+    "data":"7/1/1997",
+    "djs":"DJ 1, DJ 2, DJ 11",
+    "mainimagelink":"059_Jul_1997_1",
+    "subimages":"059_Jul_1997_2, 059_Jul_1997_3, 059_Jul_1997_4, 059_Jul_1997_5"
+  },
+  {
+    "title":"Issue 60",
+    "data":"8/1/1997",
+    "djs":"DJ 1, DJ 2, DJ 12",
+    "mainimagelink":"060_Aug_1997_1",
+    "subimages":"060_Aug_1997_2, 060_Aug_1997_3, 060_Aug_1997_4, 060_Aug_1997_5"
+  },
+  {
+    "title":"Issue 61",
+    "data":"9/1/1997",
+    "djs":"DJ 1, DJ 2, DJ 13",
+    "mainimagelink":"061_Sep_1997_1",
+    "subimages":"061_Sep_1997_2, 061_Sep_1997_3, 061_Sep_1997_4, 061_Sep_1997_5"
+  },
+  {
+    "title":"Issue 62",
+    "data":"10/1/1997",
+    "djs":"DJ 1, DJ 2, DJ 14",
+    "mainimagelink":"062_Oct_1997_1",
+    "subimages":"062_Oct_1997_2, 062_Oct_1997_3, 062_Oct_1997_4, 062_Oct_1997_5"
+  },
+  {
+    "title":"Issue 63",
+    "data":"11/1/1997",
+    "djs":"DJ 1, DJ 2, DJ 15",
+    "mainimagelink":"063_Nov_1997_1",
+    "subimages":"063_Nov_1997_2, 063_Nov_1997_3, 063_Nov_1997_4, 063_Nov_1997_5"
+  },
+  {
+    "title":"Issue 64",
+    "data":"12/1/1997",
+    "djs":"DJ 1, DJ 2, DJ 16",
+    "mainimagelink":"064_Dec_1997_1",
+    "subimages":"064_Dec_1997_2, 064_Dec_1997_3, 064_Dec_1997_4, 064_Dec_1997_5"
+  },
+  {
+    "title":"Issue 65",
+    "data":"1/1/1998",
+    "djs":"DJ 1, DJ 2, DJ 17",
+    "mainimagelink":"065_Jan_1998_1",
+    "subimages":"065_Jan_1998_2, 065_Jan_1998_3, 065_Jan_1998_4, 065_Jan_1998_5"
+  },
+  {
+    "title":"Issue 66",
+    "data":"2/1/1998",
+    "djs":"DJ 1, DJ 2, DJ 18",
+    "mainimagelink":"066_Feb_1998_1",
+    "subimages":"066_Feb_1998_2, 066_Feb_1998_3, 066_Feb_1998_4, 066_Feb_1998_5"
+  },
+  {
+    "title":"Issue 67",
+    "data":"3/1/1998",
+    "djs":"DJ 1, DJ 2, DJ 19",
+    "mainimagelink":"067_Mar_1998_1",
+    "subimages":"067_Mar_1998_2, 067_Mar_1998_3, 067_Mar_1998_4, 067_Mar_1998_5"
+  },
+  {
+    "title":"Issue 68",
+    "data":"4/1/1998",
+    "djs":"DJ 1, DJ 2, DJ 20",
+    "mainimagelink":"068_Apr_1998_1",
+    "subimages":"068_Apr_1998_2, 068_Apr_1998_3, 068_Apr_1998_4, 068_Apr_1998_5"
+  },
+  {
+    "title":"Issue 69",
+    "data":"5/1/1998",
+    "djs":"DJ 1, DJ 2, DJ 21",
+    "mainimagelink":"069_May_1998_1",
+    "subimages":"069_May_1998_2, 069_May_1998_3, 069_May_1998_4, 069_May_1998_5"
+  },
+  {
+    "title":"Issue 70",
+    "data":"6/1/1998",
+    "djs":"DJ 1, DJ 2, DJ 22",
+    "mainimagelink":"070_Jun_1998_1",
+    "subimages":"070_Jun_1998_2, 070_Jun_1998_3, 070_Jun_1998_4, 070_Jun_1998_5"
+  },
+  {
+    "title":"Issue 71",
+    "data":"7/1/1998",
+    "djs":"DJ 1, DJ 2, DJ 23",
+    "mainimagelink":"071_Jul_1998_1",
+    "subimages":"071_Jul_1998_2, 071_Jul_1998_3, 071_Jul_1998_4, 071_Jul_1998_5"
+  },
+  {
+    "title":"Issue 72",
+    "data":"8/1/1998",
+    "djs":"DJ 1, DJ 2, DJ 24",
+    "mainimagelink":"072_Aug_1998_1",
+    "subimages":"072_Aug_1998_2, 072_Aug_1998_3, 072_Aug_1998_4, 072_Aug_1998_5"
+  },
+  {
+    "title":"Issue 73",
+    "data":"9/1/1998",
+    "djs":"DJ 1, DJ 2, DJ 25",
+    "mainimagelink":"073_Sep_1998_1",
+    "subimages":"073_Sep_1998_2, 073_Sep_1998_3, 073_Sep_1998_4, 073_Sep_1998_5"
+  },
+  {
+    "title":"Issue 74",
+    "data":"10/1/1998",
+    "djs":"DJ 1, DJ 2, DJ 26",
+    "mainimagelink":"074_Oct_1998_1",
+    "subimages":"074_Oct_1998_2, 074_Oct_1998_3, 074_Oct_1998_4, 074_Oct_1998_5"
+  },
+  {
+    "title":"Issue 75",
+    "data":"11/1/1998",
+    "djs":"DJ 1, DJ 2, DJ 27",
+    "mainimagelink":"075_Nov_1998_1",
+    "subimages":"075_Nov_1998_2, 075_Nov_1998_3, 075_Nov_1998_4, 075_Nov_1998_5"
+  },
+  {
+    "title":"Issue 76",
+    "data":"12/1/1998",
+    "djs":"DJ 1, DJ 2, DJ 28",
+    "mainimagelink":"076_Dec_1998_1",
+    "subimages":"076_Dec_1998_2, 076_Dec_1998_3, 076_Dec_1998_4, 076_Dec_1998_5"
+  },
+  {
+    "title":"Issue 77",
+    "data":"1/1/1999",
+    "djs":"DJ 1, DJ 2, DJ 29",
+    "mainimagelink":"077_Jan_1999_1",
+    "subimages":"077_Jan_1999_2, 077_Jan_1999_3, 077_Jan_1999_4, 077_Jan_1999_5"
+  },
+  {
+    "title":"Issue 78",
+    "data":"2/1/1999",
+    "djs":"DJ 1, DJ 2, DJ 30",
+    "mainimagelink":"078_Feb_1999_1",
+    "subimages":"078_Feb_1999_2, 078_Feb_1999_3, 078_Feb_1999_4, 078_Feb_1999_5"
+  },
+  {
+    "title":"Issue 79",
+    "data":"3/1/1999",
+    "djs":"DJ 1, DJ 2, DJ 31",
+    "mainimagelink":"079_Mar_1999_1",
+    "subimages":"079_Mar_1999_2, 079_Mar_1999_3, 079_Mar_1999_4, 079_Mar_1999_5"
+  },
+  {
+    "title":"Issue 80",
+    "data":"4/1/1999",
+    "djs":"DJ 1, DJ 2, DJ 32",
+    "mainimagelink":"080_Apr_1999_1",
+    "subimages":"080_Apr_1999_2, 080_Apr_1999_3, 080_Apr_1999_4, 080_Apr_1999_5"
+  },
+  {
+    "title":"Issue 81",
+    "data":"5/1/1999",
+    "djs":"DJ 1, DJ 2, DJ 33",
+    "mainimagelink":"081_May_1999_1",
+    "subimages":"081_May_1999_2, 081_May_1999_3, 081_May_1999_4, 081_May_1999_5"
+  },
+  {
+    "title":"Issue 82",
+    "data":"6/1/1999",
+    "djs":"DJ 1, DJ 2, DJ 34",
+    "mainimagelink":"082_Jun_1999_1",
+    "subimages":"082_Jun_1999_2, 082_Jun_1999_3, 082_Jun_1999_4, 082_Jun_1999_5"
+  },
+  {
+    "title":"Issue 83",
+    "data":"7/1/1999",
+    "djs":"DJ 1, DJ 2, DJ 35",
+    "mainimagelink":"083_Jul_1999_1",
+    "subimages":"083_Jul_1999_2, 083_Jul_1999_3, 083_Jul_1999_4, 083_Jul_1999_5"
+  },
+  {
+    "title":"Issue 84",
+    "data":"8/1/1999",
+    "djs":"DJ 1, DJ 2, DJ 36",
+    "mainimagelink":"084_Aug_1999_1",
+    "subimages":"084_Aug_1999_2, 084_Aug_1999_3, 084_Aug_1999_4, 084_Aug_1999_5"
+  },
+  {
+    "title":"Issue 85",
+    "data":"9/1/1999",
+    "djs":"DJ 1, DJ 2, DJ 37",
+    "mainimagelink":"085_Sep_1999_1",
+    "subimages":"085_Sep_1999_2, 085_Sep_1999_3, 085_Sep_1999_4, 085_Sep_1999_5"
+  },
+  {
+    "title":"Issue 86",
+    "data":"12/1/1999",
+    "djs":"DJ 1, DJ 2, DJ 38",
+    "mainimagelink":"086_Dec_1999_1",
+    "subimages":"086_Dec_1999_2, 086_Dec_1999_3"
+  },
+  {
+    "title":"Issue 87",
+    "data":"2/1/2000",
+    "djs":"DJ 1, DJ 2, DJ 39",
+    "mainimagelink":"087_Feb_2000_1",
+    "subimages":"087_Feb_2000_2, 087_Feb_2000_3, 087_Feb_2000_4, 087_Feb_2000_5"
+  },
+  {
+    "title":"Issue 88",
+    "data":"3/1/2000",
+    "djs":"DJ 1, DJ 2, DJ 40",
+    "mainimagelink":"088_Mar_2000_1",
+    "subimages":"088_Mar_2000_2, 088_Mar_2000_3, 088_Mar_2000_4, 088_Mar_2000_5"
+  },
+  {
+    "title":"Issue 89",
+    "data":"4/1/2000",
+    "djs":"DJ 1, DJ 2, DJ 41",
+    "mainimagelink":"089_Apr_2000_1",
+    "subimages":"089_Apr_2000_2, 089_Apr_2000_3, 089_Apr_2000_4, 089_Apr_2000_5"
+  },
+  {
+    "title":"Issue 90",
+    "data":"5/1/2000",
+    "djs":"DJ 1, DJ 2, DJ 42",
+    "mainimagelink":"090_May_2000_1",
+    "subimages":"090_May_2000_2, 090_May_2000_3, 090_May_2000_4, 090_May_2000_5"
+  },
+  {
+    "title":"Issue 91",
+    "data":"6/1/2000",
+    "djs":"DJ 1, DJ 2, DJ 43",
+    "mainimagelink":"091_Jun_2000_1",
+    "subimages":"091_Jun_2000_2, 091_Jun_2000_3, 091_Jun_2000_4, 091_Jun_2000_5"
+  },
+  {
+    "title":"Issue 92",
+    "data":"7/1/2000",
+    "djs":"DJ 1, DJ 2, DJ 44",
+    "mainimagelink":"092_Jul_2000_1",
+    "subimages":"092_Jul_2000_2, 092_Jul_2000_3, 092_Jul_2000_4, 092_Jul_2000_5"
+  },
+  {
+    "title":"Issue 93",
+    "data":"8/1/2000",
+    "djs":"DJ 1, DJ 2, DJ 45",
+    "mainimagelink":"093_Aug_2000_1",
+    "subimages":"093_Aug_2000_2, 093_Aug_2000_3, 093_Aug_2000_4, 093_Aug_2000_5"
+  },
+  {
+    "title":"Issue 94",
+    "data":"9/1/2000",
+    "djs":"DJ 1, DJ 2, DJ 46",
+    "mainimagelink":"094_Sep_2000_1",
+    "subimages":"094_Sep_2000_2, 094_Sep_2000_3, 094_Sep_2000_4, 094_Sep_2000_5"
+  },
+  {
+    "title":"Issue 95",
+    "data":"10/1/2000",
+    "djs":"DJ 1, DJ 2, DJ 47",
+    "mainimagelink":"095_Oct_2000_1",
+    "subimages":"095_Oct_2000_2, 095_Oct_2000_3, 095_Oct_2000_4, 095_Oct_2000_5"
+  },
+  {
+    "title":"Issue 96",
+    "data":"11/1/2000",
+    "djs":"DJ 1, DJ 2, DJ 48",
+    "mainimagelink":"096_Nov_2000_1",
+    "subimages":"096_Nov_2000_2, 096_Nov_2000_3, 096_Nov_2000_4, 096_Nov_2000_5"
+  },
+  {
+    "title":"Issue 97",
+    "data":"12/1/2000",
+    "djs":"DJ 1, DJ 2, DJ 49",
+    "mainimagelink":"097_Dec_2000_1",
+    "subimages":"097_Dec_2000_2, 097_Dec_2000_3, 097_Dec_2000_4, 097_Dec_2000_5"
+  },
+  {
+    "title":"Issue 99",
+    "data":"2/1/2001",
+    "djs":"DJ 1, DJ 2, DJ 50",
+    "mainimagelink":"099_Feb_2001_1",
+    "subimages":"099_Feb_2001_2, 099_Feb_2001_3, 099_Feb_2001_4, 099_Feb_2001_5"
+  },
+  {
+    "title":"Issue 100",
+    "data":"3/1/2001",
+    "djs":"DJ 1, DJ 2, DJ 51",
+    "mainimagelink":"100_Mar_2001_1",
+    "subimages":"100_Mar_2001_2, 100_Mar_2001_3, 100_Mar_2001_4, 100_Mar_2001_5"
+  },
+  {
+    "title":"Issue 101",
+    "data":"4/1/2001",
+    "djs":"DJ 1, DJ 2, DJ 52",
+    "mainimagelink":"101_Apr_2001_1",
+    "subimages":"101_Apr_2001_2, 101_Apr_2001_3, 101_Apr_2001_4, 101_Apr_2001_5"
+  },
+  {
+    "title":"Issue 102",
+    "data":"5/1/2001",
+    "djs":"DJ 1, DJ 2, DJ 53",
+    "mainimagelink":"102_May_2001_1",
+    "subimages":"102_May_2001_2, 102_May_2001_3, 102_May_2001_4, 102_May_2001_5"
+  },
+  {
+    "title":"Issue 103",
+    "data":"6/1/2001",
+    "djs":"DJ 1, DJ 2, DJ 54",
+    "mainimagelink":"103_Jun_2001_1",
+    "subimages":"103_Jun_2001_2, 103_Jun_2001_3, 103_Jun_2001_4, 103_Jun_2001_5"
+  },
+  {
+    "title":"Issue 104",
+    "data":"7/1/2001",
+    "djs":"DJ 1, DJ 2, DJ 55",
+    "mainimagelink":"104_Jul_2001_1",
+    "subimages":"104_Jul_2001_2, 104_Jul_2001_3, 104_Jul_2001_4, 104_Jul_2001_5"
+  },
+  {
+    "title":"Issue 105",
+    "data":"8/1/2001",
+    "djs":"DJ 1, DJ 2, DJ 56",
+    "mainimagelink":"105_Aug_2001_1",
+    "subimages":"105_Aug_2001_2, 105_Aug_2001_3, 105_Aug_2001_4, 105_Aug_2001_5"
+  },
+  {
+    "title":"Issue 106",
+    "data":"9/1/2001",
+    "djs":"DJ 1, DJ 2, DJ 57",
+    "mainimagelink":"106_Sep_2001_1",
+    "subimages":"106_Sep_2001_2, 106_Sep_2001_3, 106_Sep_2001_4, 106_Sep_2001_5"
+  },
+  {
+    "title":"Issue 108",
+    "data":"11/1/2001",
+    "djs":"DJ 1, DJ 2, DJ 59",
+    "mainimagelink":"108_Nov_2001_1",
+    "subimages":"108_Nov_2001_2, 108_Nov_2001_3, 108_Nov_2001_4, 108_Nov_2001_5"
+  },
+  {
+    "title":"Issue 109",
+    "data":"12/1/2001",
+    "djs":"DJ 1, DJ 2, DJ 60",
+    "mainimagelink":"109_Dec_2001_1",
+    "subimages":"109_Dec_2001_2, 109_Dec_2001_3, 109_Dec_2001_4, 109_Dec_2001_5"
+  },
+  {
+    "title":"Issue 110",
+    "data":"1/1/2002",
+    "djs":"DJ 1, DJ 2, DJ 61",
+    "mainimagelink":"110_Jan_2002_1",
+    "subimages":"110_Jan_2002_2, 110_Jan_2002_3, 110_Jan_2002_4, 110_Jan_2002_5"
+  },
+  {
+    "title":"Issue 111",
+    "data":"2/1/2002",
+    "djs":"DJ 1, DJ 2, DJ 62",
+    "mainimagelink":"111_Feb_2002_1",
+    "subimages":"111_Feb_2002_2, 111_Feb_2002_3, 111_Feb_2002_4, 111_Feb_2002_5"
+  },
+  {
+    "title":"Issue 112",
+    "data":"3/1/2002",
+    "djs":"DJ 1, DJ 2, DJ 63",
+    "mainimagelink":"112_Mar_2002_1",
+    "subimages":"112_Mar_2002_2, 112_Mar_2002_3, 112_Mar_2002_4, 112_Mar_2002_5"
+  },
+  {
+    "title":"Issue 113",
+    "data":"4/1/2002",
+    "djs":"DJ 1, DJ 2, DJ 64",
+    "mainimagelink":"113_Apr_2002_1",
+    "subimages":"113_Apr_2002_2, 113_Apr_2002_3, 113_Apr_2002_4, 113_Apr_2002_5"
+  },
+  {
+    "title":"Issue 114",
+    "data":"5/1/2002",
+    "djs":"DJ 1, DJ 2, DJ 65",
+    "mainimagelink":"114_May_2002_1",
+    "subimages":"114_May_2002_2, 114_May_2002_3, 114_May_2002_4, 114_May_2002_5"
+  },
+  {
+    "title":"Issue 115",
+    "data":"6/1/2002",
+    "djs":"DJ 1, DJ 2, DJ 66",
+    "mainimagelink":"115_Jun_2002_1",
+    "subimages":"115_Jun_2002_2, 115_Jun_2002_3, 115_Jun_2002_4, 115_Jun_2002_5"
+  },
+  {
+    "title":"Issue 116",
+    "data":"7/1/2002",
+    "djs":"DJ 1, DJ 2, DJ 67",
+    "mainimagelink":"116_Jul_2002_1",
+    "subimages":"116_Jul_2002_2, 116_Jul_2002_3, 116_Jul_2002_4, 116_Jul_2002_5"
+  },
+  {
+    "title":"Issue 117",
+    "data":"8/1/2002",
+    "djs":"DJ 1, DJ 2, DJ 68",
+    "mainimagelink":"117_Aug_2002_1",
+    "subimages":"117_Aug_2002_2, 117_Aug_2002_3, 117_Aug_2002_4, 117_Aug_2002_5"
+  },
+  {
+    "title":"Issue 118",
+    "data":"9/1/2002",
+    "djs":"DJ 1, DJ 2, DJ 69",
+    "mainimagelink":"118_Sep_2002_1",
+    "subimages":"118_Sep_2002_2, 118_Sep_2002_3, 118_Sep_2002_4, 118_Sep_2002_5"
+  },
+  {
+    "title":"Issue 119",
+    "data":"10/1/2002",
+    "djs":"DJ 1, DJ 2, DJ 70",
+    "mainimagelink":"119_Oct_2002_1",
+    "subimages":"119_Oct_2002_2, 119_Oct_2002_3, 119_Oct_2002_4, 119_Oct_2002_5"
+  },
+  {
+    "title":"Issue 120",
+    "data":"11/1/2002",
+    "djs":"DJ 1, DJ 2, DJ 71",
+    "mainimagelink":"120_Nov_2002_1",
+    "subimages":"120_Nov_2002_2, 120_Nov_2002_3, 120_Nov_2002_4, 120_Nov_2002_5"
+  },
+  {
+    "title":"Issue 121",
+    "data":"12/1/2002",
+    "djs":"DJ 1, DJ 2, DJ 72",
+    "mainimagelink":"121_Dec_2002_1",
+    "subimages":"121_Dec_2002_2, 121_Dec_2002_3, 121_Dec_2002_4, 121_Dec_2002_5"
+  },
+  {
+    "title":"Issue 122",
+    "data":"1/1/2003",
+    "djs":"DJ 1, DJ 2, DJ 73",
+    "mainimagelink":"122_Jan_2003_1",
+    "subimages":"122_Jan_2003_2, 122_Jan_2003_3, 122_Jan_2003_4, 122_Jan_2003_5"
+  },
+  {
+    "title":"Issue 123",
+    "data":"2/1/2003",
+    "djs":"DJ 1, DJ 2, DJ 74",
+    "mainimagelink":"123_Feb_2003_1",
+    "subimages":"123_Feb_2003_2, 123_Feb_2003_3, 123_Feb_2003_4, 123_Feb_2003_5"
+  },
+  {
+    "title":"Issue 124",
+    "data":"3/1/2003",
+    "djs":"DJ 1, DJ 2, DJ 75",
+    "mainimagelink":"124_Mar_2003_1",
+    "subimages":"124_Mar_2003_2, 124_Mar_2003_3, 124_Mar_2003_4, 124_Mar_2003_5"
+  },
+  {
+    "title":"Issue 125",
+    "data":"4/1/2003",
+    "djs":"DJ 1, DJ 2, DJ 76",
+    "mainimagelink":"125_Apr_2003_1",
+    "subimages":"125_Apr_2003_2, 125_Apr_2003_3, 125_Apr_2003_4, 125_Apr_2003_5"
+  },
+  {
+    "title":"Issue 126",
+    "data":"5/1/2003",
+    "djs":"DJ 1, DJ 2, DJ 77",
+    "mainimagelink":"126_May_2003_1",
+    "subimages":"126_May_2003_2, 126_May_2003_3, 126_May_2003_4, 126_May_2003_5"
+  },
+  {
+    "title":"Issue 127",
+    "data":"6/1/2003",
+    "djs":"DJ 1, DJ 2, DJ 78",
+    "mainimagelink":"127_Jun_2003_1",
+    "subimages":"127_Jun_2003_2, 127_Jun_2003_3, 127_Jun_2003_4, 127_Jun_2003_5"
+  },
+  {
+    "title":"Issue 128",
+    "data":"7/1/2003",
+    "djs":"DJ 1, DJ 2, DJ 79",
+    "mainimagelink":"128_Jul_2003_1",
+    "subimages":"128_Jul_2003_2, 128_Jul_2003_3, 128_Jul_2003_4, 128_Jul_2003_5"
+  },
+  {
+    "title":"Issue 129",
+    "data":"8/1/2003",
+    "djs":"DJ 1, DJ 2, DJ 80",
+    "mainimagelink":"129_Aug_2003_1",
+    "subimages":"129_Aug_2003_2, 129_Aug_2003_3, 129_Aug_2003_4, 129_Aug_2003_5"
+  },
+  {
+    "title":"Issue 130",
+    "data":"9/1/2003",
+    "djs":"DJ 1, DJ 2, DJ 81",
+    "mainimagelink":"130_Sep_2003_1",
+    "subimages":"130_Sep_2003_2, 130_Sep_2003_3, 130_Sep_2003_4, 130_Sep_2003_5"
+  },
+  {
+    "title":"Issue 131",
+    "data":"10/1/2003",
+    "djs":"DJ 1, DJ 2, DJ 82",
+    "mainimagelink":"131_Oct_2003_1",
+    "subimages":"131_Oct_2003_2, 131_Oct_2003_3, 131_Oct_2003_4, 131_Oct_2003_5"
+  },
+  {
+    "title":"Issue 132",
+    "data":"11/1/2003",
+    "djs":"DJ 1, DJ 2, DJ 83",
+    "mainimagelink":"132_Nov_2003_1",
+    "subimages":"132_Nov_2003_2, 132_Nov_2003_3, 132_Nov_2003_4, 132_Nov_2003_5"
+  },
+  {
+    "title":"Issue 133",
+    "data":"12/1/2003",
+    "djs":"DJ 1, DJ 2, DJ 84",
+    "mainimagelink":"133_Dec_2003_1",
+    "subimages":"133_Dec_2003_2, 133_Dec_2003_3, 133_Dec_2003_4, 133_Dec_2003_5"
+  },
+  {
+    "title":"Issue 134",
+    "data":"1/1/2004",
+    "djs":"DJ 1, DJ 2, DJ 85",
+    "mainimagelink":"134_Jan_2004_1",
+    "subimages":"134_Jan_2004_2, 134_Jan_2004_3, 134_Jan_2004_4, 134_Jan_2004_5"
+  },
+  {
+    "title":"Issue 135",
+    "data":"2/1/2004",
+    "djs":"DJ 1, DJ 2, DJ 86",
+    "mainimagelink":"135_Feb_2004_1",
+    "subimages":"135_Feb_2004_2, 135_Feb_2004_3, 135_Feb_2004_4, 135_Feb_2004_5"
+  },
+  {
+    "title":"Issue 136",
+    "data":"3/1/2004",
+    "djs":"DJ 1, DJ 2, DJ 87",
+    "mainimagelink":"136_Mar_2004_1",
+    "subimages":"136_Mar_2004_2, 136_Mar_2004_3, 136_Mar_2004_4, 136_Mar_2004_5"
+  },
+  {
+    "title":"Issue 137",
+    "data":"4/1/2004",
+    "djs":"DJ 1, DJ 2, DJ 88",
+    "mainimagelink":"137_Apr_2004_1",
+    "subimages":"137_Apr_2004_2, 137_Apr_2004_3, 137_Apr_2004_4, 137_Apr_2004_5"
+  },
+  {
+    "title":"Issue 138",
+    "data":"5/1/2004",
+    "djs":"DJ 1, DJ 2, DJ 89",
+    "mainimagelink":"138_May_2004_1",
+    "subimages":"138_May_2004_2, 138_May_2004_3, 138_May_2004_4, 138_May_2004_5"
+  },
+  {
+    "title":"Issue 139",
+    "data":"6/1/2004",
+    "djs":"DJ 1, DJ 2, DJ 90",
+    "mainimagelink":"139_Jun_2004_1",
+    "subimages":"139_Jun_2004_2, 139_Jun_2004_3, 139_Jun_2004_4, 139_Jun_2004_5"
+  },
+  {
+    "title":"Issue 140",
+    "data":"7/1/2004",
+    "djs":"DJ 1, DJ 2, DJ 91",
+    "mainimagelink":"140_Jul_2004_1",
+    "subimages":"140_Jul_2004_2, 140_Jul_2004_3, 140_Jul_2004_4, 140_Jul_2004_5"
+  },
+  {
+    "title":"Issue 141",
+    "data":"8/1/2004",
+    "djs":"DJ 1, DJ 2, DJ 92",
+    "mainimagelink":"141_Aug_2004_1",
+    "subimages":"141_Aug_2004_2, 141_Aug_2004_3, 141_Aug_2004_4, 141_Aug_2004_5"
+  },
+  {
+    "title":"Issue 142",
+    "data":"9/1/2004",
+    "djs":"DJ 1, DJ 2, DJ 93",
+    "mainimagelink":"142_Sep_2004_1",
+    "subimages":"142_Sep_2004_2, 142_Sep_2004_3, 142_Sep_2004_4, 142_Sep_2004_5"
+  },
+  {
+    "title":"Issue 143",
+    "data":"10/1/2004",
+    "djs":"DJ 1, DJ 2, DJ 94",
+    "mainimagelink":"143_Oct_2004_1",
+    "subimages":"143_Oct_2004_2, 143_Oct_2004_3, 143_Oct_2004_4, 143_Oct_2004_5"
+  },
+  {
+    "title":"Issue 144",
+    "data":"11/1/2004",
+    "djs":"DJ 1, DJ 2, DJ 95",
+    "mainimagelink":"144_Nov_2004_1",
+    "subimages":"144_Nov_2004_2, 144_Nov_2004_3, 144_Nov_2004_4, 144_Nov_2004_5"
+  },
+  {
+    "title":"Issue 145",
+    "data":"12/1/2004",
+    "djs":"DJ 1, DJ 2, DJ 96",
+    "mainimagelink":"145_Dec_2004_1",
+    "subimages":"145_Dec_2004_2, 145_Dec_2004_3, 145_Dec_2004_4, 145_Dec_2004_5"
+  },
+  {
+    "title":"Issue 146",
+    "data":"1/1/2005",
+    "djs":"DJ 1, DJ 2, DJ 97",
+    "mainimagelink":"146_Jan_2005_1",
+    "subimages":"146_Jan_2005_2, 146_Jan_2005_3, 146_Jan_2005_4, 146_Jan_2005_5"
+  },
+  {
+    "title":"Issue 147",
+    "data":"2/1/2005",
+    "djs":"DJ 1, DJ 2, DJ 98",
+    "mainimagelink":"147_Feb_2005_1",
+    "subimages":"147_Feb_2005_2, 147_Feb_2005_3, 147_Feb_2005_4, 147_Feb_2005_5"
+  },
+  {
+    "title":"Issue 148",
+    "data":"3/1/2005",
+    "djs":"DJ 1, DJ 2, DJ 99",
+    "mainimagelink":"148_Mar_2005_1",
+    "subimages":"148_Mar_2005_2, 148_Mar_2005_3, 148_Mar_2005_4, 148_Mar_2005_5"
+  },
+  {
+    "title":"Issue 149",
+    "data":"4/1/2005",
+    "djs":"DJ 1, DJ 2, DJ 100",
+    "mainimagelink":"149_Apr_2005_1",
+    "subimages":"149_Apr_2005_2, 149_Apr_2005_3, 149_Apr_2005_4, 149_Apr_2005_5"
+  },
+  {
+    "title":"Issue 150",
+    "data":"5/1/2005",
+    "djs":"DJ 1, DJ 2, DJ 101",
+    "mainimagelink":"150_May_2005_1",
+    "subimages":"150_May_2005_2, 150_May_2005_3, 150_May_2005_4, 150_May_2002_5"
+  },
+  {
+    "title":"Issue 151",
+    "data":"6/1/2005",
+    "djs":"DJ 1, DJ 2, DJ 102",
+    "mainimagelink":"151_Jun_2005_1",
+    "subimages":"151_Jun_2005_2, 151_Jun_2005_3, 151_Jun_2005_4, 151_Jun_2005_5"
+  },
+  {
+    "title":"Issue 152",
+    "data":"7/1/2005",
+    "djs":"DJ 1, DJ 2, DJ 103",
+    "mainimagelink":"152_Jul_2005_1",
+    "subimages":"152_Jul_2005_2, 152_Jul_2005_3, 152_Jul_2005_4, 152_Jul_2005_5"
+  },
+  {
+    "title":"Issue 153",
+    "data":"8/1/2005",
+    "djs":"DJ 1, DJ 2, DJ 104",
+    "mainimagelink":"153_Aug_2005_1",
+    "subimages":"153_Aug_2005_2, 153_Aug_2005_3, 153_Aug_2005_4, 153_Aug_2005_5"
+  },
+  {
+    "title":"Issue 154",
+    "data":"9/1/2005",
+    "djs":"DJ 1, DJ 2, DJ 105",
+    "mainimagelink":"154_Sep_2005_1",
+    "subimages":"154_Sep_2005_2, 154_Sep_2005_3, 154_Sep_2005_4, 154_Sep_2005_5"
+  },
+  {
+    "title":"Issue 157",
+    "data":"11/1/2005",
+    "djs":"DJ 1, DJ 2, DJ 106",
+    "mainimagelink":"157_Nov_2005_1",
+    "subimages":"157_Nov_2005_2, 157_Nov_2005_3, 157_Nov_2005_4"
+  },
+  {
+    "title":"Issue 158",
+    "data":"12/1/2005",
+    "djs":"DJ 1, DJ 2, DJ 107",
+    "mainimagelink":"158_Dec_2005_1",
+    "subimages":"158_Dec_2005_2, 158_Dec_2005_3, 158_Dec_2005_4, 158_Dec_2005_5"
+  },
+  {
+    "title":"Issue 159",
+    "data":"1/1/2006",
+    "djs":"DJ 1, DJ 2, DJ 108",
+    "mainimagelink":"159_Jan_2006_1",
+    "subimages":"159_Jan_2006_2, 159_Jan_2006_3, 159_Jan_2006_4, 159_Jan_2006_5"
+  },
+  {
+    "title":"Issue 161",
+    "data":"3/1/2006",
+    "djs":"DJ 1, DJ 2, DJ 109",
+    "mainimagelink":"161_Mar_2006_1",
+    "subimages":"161_Mar_2006_2, 161_Mar_2006_3, 161_Mar_2006_4, 161_Mar_2006_5"
+  },
+  {
+    "title":"Issue 162",
+    "data":"4/1/2006",
+    "djs":"DJ 1, DJ 2, DJ 110",
+    "mainimagelink":"162_Apr_2006_1",
+    "subimages":"162_Apr_2006_2, 162_Apr_2006_3, 162_Apr_2006_4, 162_Apr_2006_5"
+  },
+  {
+    "title":"Issue 163",
+    "data":"5/1/2006",
+    "djs":"DJ 1, DJ 2, DJ 111",
+    "mainimagelink":"163_May_2006_1",
+    "subimages":"163_May_2006_2, 163_May_2006_3"
+  },
+  {
+    "title":"Issue 164",
+    "data":"6/1/2006",
+    "djs":"DJ 1, DJ 2, DJ 112",
+    "mainimagelink":"164_Jun_2006_1",
+    "subimages":"164_Jun_2006_2, 164_Jun_2006_3, 164_Jun_2006_4, 164_Jun_2006_5"
+  },
+  {
+    "title":"Issue 165",
+    "data":"7/1/2006",
+    "djs":"DJ 1, DJ 2, DJ 113",
+    "mainimagelink":"165_Jul_2006_1",
+    "subimages":"165_Jul_2006_2, 165_Jul_2006_3, 165_Jul_2006_4"
+  },
+  {
+    "title":"Issue 166",
+    "data":"8/1/2006",
+    "djs":"DJ 1, DJ 2, DJ 114",
+    "mainimagelink":"166_Aug_2006_1",
+    "subimages":"166_Aug_2006_2, 166_Aug_2006_3, 166_Aug_2006_4"
+  },
+  {
+    "title":"Issue 167",
+    "data":"9/1/2006",
+    "djs":"DJ 1, DJ 2, DJ 115",
+    "mainimagelink":"167_Sep_2006_1",
+    "subimages":"167_Sep_2006_2, 167_Sep_2006_3, 167_Sep_2006_4"
+  },
+  {
+    "title":"Issue 168",
+    "data":"10/1/2006",
+    "djs":"DJ 1, DJ 2, DJ 116",
+    "mainimagelink":"168_Oct_2006_1",
+    "subimages":"168_Oct_2006_2, 168_Oct_2006_3, 168_Oct_2006_4, 168_Oct_2006_5"
+  },
+  {
+    "title":"Issue 169",
+    "data":"11/1/2006",
+    "djs":"DJ 1, DJ 2, DJ 117",
+    "mainimagelink":"169_Nov_2006_1",
+    "subimages":"169_Nov_2006_2, 169_Nov_2006_3, 169_Nov_2006_4, 169_Nov_2006_5"
+  },
+  {
+    "title":"Issue 170",
+    "data":"12/1/2006",
+    "djs":"DJ 1, DJ 2, DJ 118",
+    "mainimagelink":"170_Dec_2006_1",
+    "subimages":"170_Dec_2006_2, 170_Dec_2006_3, 170_Dec_2006_4, 170_Dec_2006_5"
+  },
+  {
+    "title":"Issue 171",
+    "data":"1/1/2007",
+    "djs":"DJ 1, DJ 2, DJ 119",
+    "mainimagelink":"171_Jan_2007_1",
+    "subimages":"171_Jan_2007_2, 171_Jan_2007_3, 171_Jan_2007_4, 171_Jan_2007_5"
+  },
+  {
+    "title":"Issue 172",
+    "data":"2/1/2007",
+    "djs":"DJ 1, DJ 2, DJ 120",
+    "mainimagelink":"172_Feb_2007_1",
+    "subimages":"172_Feb_2007_2, 172_Feb_2007_3"
+  },
+  {
+    "title":"Issue 173",
+    "data":"3/1/2007",
+    "djs":"DJ 1, DJ 2, DJ 121",
+    "mainimagelink":"173_Mar_2007_1",
+    "subimages":"173_Mar_2007_2, 173_Mar_2007_3, 173_Mar_2007_4"
+  },
+  {
+    "title":"Issue 174",
+    "data":"4/1/2007",
+    "djs":"DJ 1, DJ 2, DJ 122",
+    "mainimagelink":"174_Apr_2007_1",
+    "subimages":"174_Apr_2007_2, 174_Apr_2007_3, 174_Apr_2007_4, 174_Apr_2007_5"
+  },
+  {
+    "title":"Issue 175",
+    "data":"5/1/2007",
+    "djs":"DJ 1, DJ 2, DJ 123",
+    "mainimagelink":"175_May_2007_1",
+    "subimages":"175_May_2007_2, 175_May_2007_3, 175_May_2007_4"
+  },
+  {
+    "title":"Issue 176",
+    "data":"6/1/2007",
+    "djs":"DJ 1, DJ 2, DJ 124",
+    "mainimagelink":"176_Jun_2007_1",
+    "subimages":"176_Jun_2007_2, 176_Jun_2007_3, 176_Jun_2007_4, 176_Jun_2007_5"
+  },
+  {
+    "title":"Issue 177",
+    "data":"7/1/2007",
+    "djs":"DJ 1, DJ 2, DJ 125",
+    "mainimagelink":"177_Jul_2007_1",
+    "subimages":"177_Jul_2007_2, 177_Jul_2007_3, 177_Jul_2007_4, 177_Jul_2007_5"
+  },
+  {
+    "title":"Issue 178",
+    "data":"8/1/2007",
+    "djs":"DJ 1, DJ 2, DJ 126",
+    "mainimagelink":"178_Aug_2007_1",
+    "subimages":"178_Aug_2007_2, 178_Aug_2007_3, 178_Aug_2007_4, 178_Aug_2007_5"
+  },
+  {
+    "title":"Issue 179",
+    "data":"9/1/2007",
+    "djs":"DJ 1, DJ 2, DJ 127",
+    "mainimagelink":"179_Sep_2007_1",
+    "subimages":"179_Sep_2007_2, 179_Sep_2007_3, 179_Sep_2007_4"
+  },
+  {
+    "title":"Issue 180",
+    "data":"10/1/2007",
+    "djs":"DJ 1, DJ 2, DJ 128",
+    "mainimagelink":"180_Oct_2007_1",
+    "subimages":"180_Oct_2007_2, 180_Oct_2007_3, 180_Oct_2007_4, 180_Oct_2007_5"
+  },
+  {
+    "title":"Issue 181",
+    "data":"11/1/2007",
+    "djs":"DJ 1, DJ 2, DJ 129",
+    "mainimagelink":"181_Nov_2007_1",
+    "subimages":"181_Nov_2007_2, 181_Nov_2007_3, 181_Nov_2007_4, 181_Nov_2007_5"
+  },
+  {
+    "title":"Issue 182",
+    "data":"12/1/2007",
+    "djs":"DJ 1, DJ 2, DJ 130",
+    "mainimagelink":"182_Dec_2007_1",
+    "subimages":"182_Dec_2007_2, 182_Dec_2007_3, 182_Dec_2007_4"
+  }
+]

@@ -93,6 +93,7 @@ angular.module('yellowFlyersApp').controller('MainCtrl', ['$scope', '$rootScope'
 						self.subimages = array;
 					}
 
+					console.log($scope.flyersArray);
 
 					//push first three items into $scope.flyers
 					for (var z = 0; z < 3; z++){
