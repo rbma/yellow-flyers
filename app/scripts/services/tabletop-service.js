@@ -14,16 +14,15 @@ angular.module('yellowFlyersApp').factory('tabletopService', ['$http', '$q', fun
 
   var tableTop = {
 
+    
     key: '1v-aQYwpoUJEcopld4DsYafoOuDXIgJfPepuWwQcd2RY',
     imagePrefix: '//d1b56a2nqp2zss.cloudfront.net/',
     imagePost: '.jpg',
     tableData: [],
     tableLength: 0,
 
-    
-    init: function(){
 
-      var self = this;
+    init: function(){
 
       var promise = $http({method: 'GET', url: '/data.json'});
 
@@ -43,11 +42,19 @@ angular.module('yellowFlyersApp').factory('tabletopService', ['$http', '$q', fun
 
     },
 
+    
+
+
     storeLength: function(arr){
       var self = this;
 
       self.tableLength = arr.data.length;
       console.log(self.tableLength);
+    },
+
+
+    splitPages: function(location){
+
     },
 
 
@@ -80,8 +87,6 @@ angular.module('yellowFlyersApp').factory('tabletopService', ['$http', '$q', fun
         //now replace array in flyer item
         item.subimages = subImageArray;
       }
-    
-      console.log(data);
 
     }
 
@@ -105,6 +110,10 @@ angular.module('yellowFlyersApp').factory('tabletopService', ['$http', '$q', fun
 
     cleanData: function(data){
       tableTop.cleanData(data);
+    },
+
+    splitPages: function(path){
+      tableTop.splitPages(path);
     }
   };
 
