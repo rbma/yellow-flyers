@@ -44,29 +44,17 @@ angular.module('yellowFlyersApp').controller('MainCtrl', [
 			return ($scope.image.imgPrefix + src + $scope.image.imgPost);
 		};
 
-		
-		//get current url page
-		var path = $location.path();
-
-		//run switch to determine what to pass in to service
-
-		//cut out last number
+		//stores cut amount for given array (ie flyer 10-20)
+		var splitAmount = [];
 
 
 
-var orientation = window.orientation; switch(orientation) {
-case 0:
-// portrait orientation
-break; case 90:
-case -90:
-// landscape orientation
-break; }
-}
 
-		
-		//TO:DO: only call if no data already exists
-		//call table functino with promise. To-Do: Set local JSON fallback
+		//call table function with promise. To-Do: Set local JSON fallback
 		tabletopService.init().then(function(data){
+
+			//get current url page
+			var path = $location.path();
 			
 			//store total number of items 
 			tabletopService.storeLength(data);
@@ -75,12 +63,20 @@ break; }
 			tabletopService.cleanData(data);
 
 			//split data into pages
-			tabletopService.splitPages();
+			splitAmount = tabletopService.splitPages(path);
+
 
 			$scope.allFlyers = data.data;
+			console.log($scope.allFlyers);
+
+			for (var i = splitAmount[0]; i < splitAmount[1]; i++){
+				$scope.flyers.push($scope.allFlyers[i]);
+			}
+
 
 
 		});
+
 
 
 
