@@ -26,17 +26,6 @@ angular.module('yellowFlyersApp').controller('MainCtrl', [
 		//spinner
 		$scope.loading = true;
 
-		// $scope.pages = [
-		// 	{'pageHash':'/'},
-		// 	{'pageHash':'/page2'},
-		// 	{'pageHash':'/page3'},
-		// 	{'pageHash':'/page4'},
-		// 	{'pageHash':'/page5'},
-		// 	{'pageHash':'/page6'},
-		// 	{'pageHash':'/page7'},
-		// 	{'pageHash':'/page8'},
-		// 	{'pageHash':'/page9'}
-		// ];
 
 
 		//call table function with promise. To-Do: Set local JSON fallback

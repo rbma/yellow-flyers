@@ -18,7 +18,6 @@ ng-view, .ng-scope{
 [ng-click],
 [data-ng-click],
 [x-ng-click] {
-    cursor: pointer !important;
     cursor: url(../images/hand-cursor.png), pointer !important;
 }
 

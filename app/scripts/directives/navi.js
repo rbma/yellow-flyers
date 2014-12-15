@@ -72,7 +72,19 @@ angular.module('yellowFlyersApp').directive('navi', ['$location', '$rootScope', 
 			path: $location.path(),
 			naviOpen: $('.navi-open'),
 			navOpen: false,
+			showNav: false,
 			pages: pages,
+			init: function(){
+				var self = this;
+				self.path = $location.path();
+				if (self.path === '/'){
+					self.showNav = false;
+				}
+				else{
+					self.showNav = true;
+				}
+
+			},
 			
 			openNav: function(){
 				var self = this;
@@ -89,6 +101,8 @@ angular.module('yellowFlyersApp').directive('navi', ['$location', '$rootScope', 
 
 			nextPage: function(){
 				var self = this;
+
+				self.init();
 
 				//get new location
 				self.path = $location.path();
@@ -119,6 +133,8 @@ angular.module('yellowFlyersApp').directive('navi', ['$location', '$rootScope', 
 			previousPage: function(){
 				
 				var self = this;
+
+				self.init();
 				
 				//get new location
 				self.path = $location.path();
@@ -149,7 +165,10 @@ angular.module('yellowFlyersApp').directive('navi', ['$location', '$rootScope', 
 		//listen route changes to reset nav
 		$rootScope.$on('routeChange', function(){
 			$scope.nav.navOpen = false;
+			$scope.nav.init();
 		});
+
+		$scope.nav.init();
 	};
 
 	return {

@@ -65,7 +65,7 @@
 	@include flex-direction(column);
 	@include align-items(center);
 	@include justify-content(center);
-	@include transform(translateY(100%) translateZ(0));
+	@include transform(translateY(110%) translateZ(0));
 	@include transition(transform .4s ease-in-out);
 	a{
 		position: relative;

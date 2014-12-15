@@ -7,11 +7,11 @@
  * # IntroCtrl
  * Controller of the yellowFlyersApp
  */
-angular.module('yellowFlyersApp')
-  .controller('IntroCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+angular.module('yellowFlyersApp').controller('IntroCtrl', ['$scope', '$rootScope', '$location', function ($scope, $rootScope, $location) {
+
+	$scope.go = function(path){
+		$location.path(path);
+		$rootScope.$broadcast('routeChange');
+	};
+
+}]);
