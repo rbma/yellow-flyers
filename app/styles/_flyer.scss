@@ -9,38 +9,6 @@
 	padding: 0;
 }
 
-nav{
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 50px;
-	background: rgba(255,255,255,0.95);
-	width: 100%;
-	z-index: 99999999;
-	ul{
-		list-style-type: none;
-		padding: 0;
-		@include display(flex);
-		@include align-items(center);
-		@include justify-content(center);
-		li{
-			display: inline;
-			margin-left: 7.5px;
-			margin-right: 7.5px;
-			margin-top: 0;
-			a{
-				color: black;
-				text-decoration: none;
-				opacity: 0.5;
-				@include transition(all .2s linear);
-				&:hover{
-					opacity: 1;
-				}
-			}
-		}
-	}
-
-}
 
 .infinity{
 	width: 100%;
@@ -50,6 +18,18 @@ nav{
 	list-style-type: none;
 	padding: 0;
 	cursor: url(../images/hand-cursor.png), auto !important;
+}
+
+@include keyframes(updown){
+	0%{
+		@include transform(translateY(0));
+	}
+	50%{
+		@include transform(translateY(20px));
+	}
+	100%{
+		@include transform(translateY(0));
+	}
 }
 
 
@@ -80,8 +60,21 @@ nav{
 		margin: 0;
 		top: 0;
 		left: 0;
+		cursor: auto !important;
 		@include display(flex);
+		@include flex-direction(column);
 		@include justify-content(center);
 		@include align-items(center);
+		@include user-select(none);
+		p{
+			max-width: 60%;
+			font-size: 1.2em;
+
+		}
+		i{
+			color: white;
+			font-size: 2em;
+			@include animation(updown 2.0s linear infinite alternate);
+		}
 	}
 }

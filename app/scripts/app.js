@@ -16,8 +16,7 @@ angular
     'duScroll'
   ])
   .value({
-    'duScrollDuration': 5000,
-    'duScrollOffset': 30
+    'duScrollDuration': 1000
   })
   .config(function ($routeProvider) {
     $routeProvider

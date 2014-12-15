@@ -27,21 +27,14 @@ angular.module('yellowFlyersApp').factory('tabletopService', ['$http', function 
 
     init: function(){
 
-      var promise = $http({method: 'GET', url: '/data.json'});
+
+      var promise = $http({
+        method: 'GET',
+        url: 'https://s3.amazonaws.com/yellow-flyers-data/flyers.json',
+        dataType: 'application/json'
+      });
 
       return promise;
-      // Tabletop.init({
-      //   key: self.key,
-      //   callback: function(data, error){
-      //     if (error){
-      //       console.log(error);
-      //     }
-      //     self.tableData = data;
-          
-      //     //deffered.resolve(self.tableData);
-      //   }
-
-      // });
 
     },
 
@@ -51,7 +44,7 @@ angular.module('yellowFlyersApp').factory('tabletopService', ['$http', function 
     storeLength: function(arr){
       var self = this;
 
-      self.tableLength = arr.data.length;
+      self.tableLength = arr.length;
       console.log(self.tableLength);
 
       //service is officially set up
@@ -65,7 +58,9 @@ angular.module('yellowFlyersApp').factory('tabletopService', ['$http', function 
       var self = this;
 
       //get right object
-      var data = dataObject.data;
+      var data = dataObject;
+
+
 
       for (var i = 0; i < self.tableLength; i++ ){
         //shorthand
@@ -76,6 +71,9 @@ angular.module('yellowFlyersApp').factory('tabletopService', ['$http', function 
 
         //replace data
         item.date = date;
+
+        //fix main image
+        item.mainimagelink = self.imagePrefix + item.mainimagelink + self.imagePost;
 
         //convert comma separated values in spreadsheet to array
         var subImageArray = item.subimages.split(', ');

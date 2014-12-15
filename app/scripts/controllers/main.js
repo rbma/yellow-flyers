@@ -66,20 +66,25 @@ angular.module('yellowFlyersApp').controller('MainCtrl', [
 		//call table function with promise. To-Do: Set local JSON fallback
 		tabletopService.init().then(function(data){
 
+			var flyers;
+
+			flyers = data.data.Flyers.elements;
+
+
 			//stores cut amount for given array (ie flyer 10-20)
 			var splitAmount = [];
 			
 			//store total number of items 
-			tabletopService.storeLength(data);
+			tabletopService.storeLength(flyers);
 
 			//clean up data
-			tabletopService.cleanData(data);
+			tabletopService.cleanData(flyers);
 
 			//split data into pages
 			splitAmount = pageService.pageRange(path);
 
 
-			allFlyers = data.data;
+			allFlyers = flyers;
 
 			$scope.flyers = pageService.customArray(allFlyers, splitAmount);
 
