@@ -26,6 +26,13 @@
 	h1{
 		font-size: 2em;
 		margin: auto 20px auto 20px;
+		&.arrow{
+			font-size: 3em;
+			@include transition(all .2s linear);
+			&:hover{
+				@include transform(scale(1.2));
+			}
+		}
 	}
 	[ng-click],
 	[data-ng-click],
@@ -55,11 +62,11 @@
 .navi-open{
 	position: fixed;
 	z-index: 98;
-	height: 80%;
+	height: 100%;
 	width: 100%;
 	bottom: 50px;
 	left: 0;
-	background: black;
+	background: rgba(0,0,0,0.9);
 	text-align: center;
 	@include display(flex);
 	@include flex-direction(column);
@@ -87,7 +94,7 @@
 			color: white;
 			text-decoration: none;
 			li{
-				font-size: 1.5em;
+				font-size: 1.7em;
 				margin-bottom: 10px;
 				text-transform: uppercase;
 				font-weight: bold;
