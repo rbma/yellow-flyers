@@ -1,11 +1,8 @@
 <section class="navi">
-	<a href="http://www.redbullmusicacademy.com" target="self">
-		<div class="logo"></div>
-	</a>
-	<h1 class="fa fa-angle-left" ng-show="!navOpen"></h1>
-	<h1 class="fa fa-bars" ng-show="!navOpen" ng-click="openNav()"></h1>
-	<h1 class="fa fa-close" ng-show="navOpen" ng-click="closeNav()"></h1>
-	<h1 class="fa fa-angle-right" ng-show="!navOpen"></h1>
+	<h1 class="fa fa-angle-left" ng-show="!nav.navOpen" ng-click="nav.previousPage()"></h1>
+	<h1 class="fa fa-bars" ng-show="!nav.navOpen" ng-click="nav.openNav()"></h1>
+	<h1 class="fa fa-close" ng-show="nav.navOpen" ng-click="nav.closeNav()"></h1>
+	<h1 class="fa fa-angle-right" ng-show="!nav.navOpen" ng-click="nav.nextPage()"></h1>
 </section>
 
 

@@ -1,22 +1,26 @@
 'use strict';
 
+/* global $:false */
+
 /**
  * @ngdoc directive
  * @name yellowFlyersApp.directive:naviOpen
  * @description
  * # naviOpen
  */
-angular.module('yellowFlyersApp').directive('naviOpen', ['$location', function ($location) {
+angular.module('yellowFlyersApp').directive('naviOpen', ['$location', '$rootScope', function ($location, $rootScope) {
 
-	var link = function($scope, element){
+	var link = function($scope){
 		var naviOpen = $('.navi-open');
 
 
 		$scope.go = function(path){
 			$location.path(path);
 			naviOpen.removeClass('active');
-			$scope.navOpen = false;
+			$rootScope.$broadcast('routeChange');
 		};
+
+		console.log($scope.pages);
 	};
 
 
