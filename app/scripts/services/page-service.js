@@ -17,44 +17,61 @@ angular.module('yellowFlyersApp')
       pageRange: function(location){
         //starting ending nums
         var spread = [0,0];
+        var page = 1;
 
-        if (location === '/'){
+        switch(location){
+          case '/':
+          page = 1;
           spread = [0,20];
-        }
+          break;
 
-        if (location === '/page2'){
+          case '/page2':
           spread = [20,40];
-        }
+          page = 2;
+          break;
 
-        if (location === '/page3'){
+          case '/page3':
           spread = [40,60];
-        }
+          page = 3;
+          break;
 
-        if (location === '/page4'){
+          case '/page4':
           spread = [60,80];
-        }
+          page = 4;
+          break;
 
-        if (location === '/page5'){
+          case '/page5':
           spread = [80,100];
-        }
+          page = 5;
+          break;
 
-        if (location === '/page6'){
+          case '/page6':
           spread = [100,120];
-        }
+          page = 6;
+          break;
 
-        if (location === '/page7'){
+          case '/page7':
           spread = [120,140];
-        }
+          page = 7;
+          break;
 
-        if (location === '/page8'){
+          case '/page8':
           spread = [140,160];
-        }
+          page = 8;
+          break;
 
-        if (location === '/page9'){
+          case '/page9':
           spread = [160,-1];
+          page = 9;
+          break;
+
+          default:
+          spread = [0,20];
+          page = 1;
+
         }
 
-        return spread;
+        return [spread, page];
       },
 
       customArray: function(array, range){

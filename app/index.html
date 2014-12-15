@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="dns-prefetch" href="https://docs.google.com"> 
-    <link rel="dns-prefetch" href="https://s3.amazonaws.com/yellow-flyers/">
-    <link rel="prefetch" href="https://docs.google.com/spreadsheets/d/1v-aQYwpoUJEcopld4DsYafoOuDXIgJfPepuWwQcd2RY/pubhtml" />
+    <link rel="dns-prefetch" href="//d1b56a2nqp2zss.cloudfront.net/">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
@@ -25,8 +24,19 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="rbma">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      <div class="fb-like" data-href="http://www.redbullmusicacademy.com" data-width="127" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>  
       <div ng-view=""></div>
+
+
+      <div id="fb-root"></div>
+
+      <!--FB-->
+      <script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));
+      </script>
+
+      
 
 
 
@@ -61,6 +71,7 @@
     <script src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js"></script>
     <script src="bower_components/jquery-waypoints/waypoints.js"></script>
     <script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
+    <script src="bower_components/angulike/angulike.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -73,6 +84,8 @@
         <script src="scripts/services/flyer-position.js"></script>
         <script src="scripts/services/tabletop-service.js"></script>
         <script src="scripts/services/page-service.js"></script>
+        <script src="scripts/controllers/intro.js"></script>
+        <script src="scripts/directives/navi.js"></script>
         <!-- endbuild -->
 </body>
 </html>

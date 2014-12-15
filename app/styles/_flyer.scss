@@ -44,37 +44,18 @@
 	background-repeat: repeat-x !important;
 	background-attachment: fixed !important;
 	.title{
-		background-color: black;
-		color: white;
+		background-color: white;
+		color: black;
 		display: inline-block;
 		padding: 10px;
 		margin-left: 20px;
 		font-weight: lighter;
+		&:first-child{
+			margin-top: 80px;
+		}
 		&:hover{
-			background-color: white;
-			color: black;
-		}
-	}
-	&.intro-flyer{
-		color: white;
-		margin: 0;
-		top: 0;
-		left: 0;
-		cursor: auto !important;
-		@include display(flex);
-		@include flex-direction(column);
-		@include justify-content(center);
-		@include align-items(center);
-		@include user-select(none);
-		p{
-			max-width: 60%;
-			font-size: 1.2em;
-
-		}
-		i{
+			background-color: black;
 			color: white;
-			font-size: 2em;
-			@include animation(updown 2.0s linear infinite alternate);
 		}
 	}
 }

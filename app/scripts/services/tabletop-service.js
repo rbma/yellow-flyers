@@ -14,8 +14,6 @@ angular.module('yellowFlyersApp').factory('tabletopService', ['$http', function 
 
   var tableTop = {
 
-    
-    key: '1v-aQYwpoUJEcopld4DsYafoOuDXIgJfPepuWwQcd2RY',
     imagePrefix: '//d1b56a2nqp2zss.cloudfront.net/',
     imagePost: '.jpg',
     tableData: [],

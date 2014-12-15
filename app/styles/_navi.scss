@@ -1,0 +1,66 @@
+.navi{
+	height: 70px !important;
+	background: black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 70px;
+	z-index: 99;
+	border-bottom: 1px solid black;
+	box-sizing: border-box;
+	@include display(flex);
+	@include flex-direction(row);
+	@include justify-content(center);
+	@include align-items(center);
+	cursor: auto !important;
+	.logo{
+		position: absolute;
+		top: 8px;
+		left: 25px;
+		width: 50px;
+		height: 50px;
+		background: url(../images/bulls.svg) no-repeat center center;
+	}
+	ul{
+		list-style-type: none;
+		padding: 0;
+		height: auto;
+		a{
+			color: white;
+			text-decoration: none;
+			&.active{
+				text-decoration: underline;
+			}
+
+			li{
+				display: inline;
+				margin-left: 15px;
+				margin-right: 15px;
+				font-size: 1em;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+
+.fb-like{
+	z-index: 999;
+	position: fixed !important;
+	top: 25px;
+	right: 20px;
+	width: 127px;
+	height: 22px;
+}
+
+.twitter-share-button{
+	z-index: 9999;
+	position: fixed !important;
+	top: 27px;
+	right: 132px;
+	height: 32px;
+	width: 32px;
+}
+

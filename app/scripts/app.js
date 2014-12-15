@@ -21,6 +21,10 @@ angular
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
+        templateUrl: 'views/intro.html',
+        controller: 'IntroCtrl'
+      })
+      .when('/page1', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
