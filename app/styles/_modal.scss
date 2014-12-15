@@ -90,7 +90,8 @@
 				top: 0;
 				left: 20px;
 				color: white;
-				text-decoration: underline;
+				font-size: 2em;
+				font-weight: lighter;
 				@include transform(translateX(-3000px));
 				&.active{
 					@include transform(translateX(0));
@@ -101,9 +102,9 @@
 				// @include transition(all .5s linear);
 				@include transform(translateX(-3000px));
 				position: absolute;
-				top: 10%;
-				left: 20%;
-				width: 60%;
+				top: 15%;
+				left: 25%;
+				width: 50%;
 				height: auto;
 				display: inline-block;
 				box-shadow: 5px 5px 10px black !important;

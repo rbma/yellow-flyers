@@ -2,19 +2,10 @@
 	<a href="http://www.redbullmusicacademy.com" target="self">
 		<div class="logo"></div>
 	</a>
-
-	<ul>
-		<a href="#/"><li>ABOUT</li></a>
-		<a href="#page1"><li>Page 1</li></a>
-		<a href="#page2"><li>Page 2</li></a>
-		<a href="#page3"><li>Page 3</li></a>
-		<a href="#page4"><li>Page 4</li></a>
-		<a href="#page5"><li>Page 5</li></a>
-		<a href="#page6"><li>Page 6</li></a>
-		<a href="#page7"><li>Page 7</li></a>
-		<a href="#page8"><li>Page 8</li></a>
-		<a href="#page9"><li>Page 9</li></a>
-	</ul>
+	<h1 class="fa fa-angle-left" ng-show="!navOpen"></h1>
+	<h1 class="fa fa-bars" ng-show="!navOpen" ng-click="openNav()"></h1>
+	<h1 class="fa fa-close" ng-show="navOpen" ng-click="closeNav()"></h1>
+	<h1 class="fa fa-angle-right" ng-show="!navOpen"></h1>
 </section>
 
 

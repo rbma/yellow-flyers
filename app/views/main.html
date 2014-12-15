@@ -3,6 +3,10 @@
 
 	<section class="flyer-wrapper">
 
+		<div class="loading" ng-if="loading">
+			<h1 class="fa fa-circle-o-notch fa-spin animate-if"></h1>
+		</div>
+
 		<ul class="infinity">
 
 			<li ng-repeat="flyer in flyers" id="flyer{{$index + 1}}" class="flyer" style="background:url({{flyer.mainimagelink}})" ng-click="modal.openModal(0, $index)">
@@ -12,5 +16,4 @@
 
 	  	<modal-box ng-show="modal.open"></modal-box>
 	</section>
-	<div navi></div>
 </div>

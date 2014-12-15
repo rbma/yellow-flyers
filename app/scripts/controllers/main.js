@@ -23,6 +23,9 @@ angular.module('yellowFlyersApp').controller('MainCtrl', [
 		//partial array of 20
 		$scope.flyers = [];
 
+		//spinner
+		$scope.loading = true;
+
 		$scope.pages = [
 			{'pageHash':'/'},
 			{'pageHash':'/page2'},
@@ -89,6 +92,8 @@ angular.module('yellowFlyersApp').controller('MainCtrl', [
 			
 
 			$scope.flyers = pageService.customArray(allFlyers, splitAmount);
+
+			$scope.loading = false;
 
 			//error handling
 		}, function(error){
