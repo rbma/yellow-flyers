@@ -14,10 +14,13 @@ angular.module('yellowFlyersApp')
 
     var page = {
 
+      arrayLength: 0,
+
       pageRange: function(location){
         //starting ending nums
         var spread = [0,0];
         var page = 1;
+        var self = this;
 
         switch(location){
           case '/':
@@ -61,7 +64,7 @@ angular.module('yellowFlyersApp')
           break;
 
           case '/page9':
-          spread = [160,-1];
+          spread = [160, self.arrayLength - 1];
           page = 9;
           break;
 
@@ -80,6 +83,11 @@ angular.module('yellowFlyersApp')
           newArray.push(array[i]);
         }
         return newArray;
+      },
+
+      storeLength: function(length){
+        var self = this;
+        self.arrayLength = parseInt(length, 10);
       }
 
 
@@ -95,6 +103,10 @@ angular.module('yellowFlyersApp')
 
       customArray: function(flyers, range){
         return page.customArray(flyers, range);
+      },
+
+      storeLength: function(length){
+        page.storeLength(length);
       }
     };
   });
