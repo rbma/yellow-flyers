@@ -8,7 +8,7 @@
  * @description
  * # naviOpen
  */
-angular.module('yellowFlyersApp').directive('naviOpen', ['$location', '$rootScope', function ($location, $rootScope) {
+angular.module('yellowFlyersApp').directive('naviOpen', ['$location', function ($location) {
 
 	var link = function($scope){
 		var naviOpen = $('.navi-open');
@@ -17,7 +17,6 @@ angular.module('yellowFlyersApp').directive('naviOpen', ['$location', '$rootScop
 		$scope.go = function(path){
 			$location.path(path);
 			naviOpen.removeClass('active');
-			$rootScope.$broadcast('routeChange');
 		};
 
 		console.log($scope.pages);

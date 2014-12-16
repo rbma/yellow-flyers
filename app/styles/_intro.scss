@@ -14,8 +14,8 @@
 	@include justify-content(center);
 	@include align-items(center);
 	.intro-text{
-		width: 80%;
-		height: 80%;
+		width: 70%;
+		height: 75%;
 		position: relative;
 		background: rgba(0,0,0,0.9);
 		text-align: center;
@@ -29,10 +29,11 @@
 		}
 	}
 	h1,p{
-		max-width: 90%;
+		max-width: 60%;
 	}
 	h1{
 		font-size: 3em;
+		font-family: 'HelveticaRounded';
 	}
 	p{
 		font-size: 1.2em;
@@ -46,6 +47,7 @@
 		}
 	}
 	a.go{
+		margin-top: 48px;
 		padding: 10px;
 		border: 1px solid white;
 		box-sizing: border-box;
@@ -60,4 +62,59 @@
 			color: black;
 		}
 	}
+
+	.button-wrap {
+		margin-bottom: 3em;
+	}
+
+	.button {
+		background: none;
+		border: none;
+		width: 150px;
+		height: 75px;
+		outline: none;
+		position: relative;
+		margin: 1em;
+		padding: 0;
+		@include user-select(none);
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		-webkit-tap-highlight-color: transparent; /* For some Androids */
+		-webkit-touch-callout: none;
+	}
+
+
+	.button__text {
+		display: block;
+		padding: 10px;
+		text-align: center;
+		position: relative;
+		z-index: 100;
+		font-size: 1.5em;
+		color: black;
+		font-weight: bold;
+		@include user-select(none);
+		-webkit-touch-callout: none;
+	}
+
+	.morph-shape {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+
+	.button--line .morph-shape svg {
+		fill: none;
+		stroke: #fff;
+		stroke-width: 4px;
+		stroke-linecap: round;
+	}
+
+	.button--fill .morph-shape svg {
+		fill: white;
+	}
+
 }
+
+

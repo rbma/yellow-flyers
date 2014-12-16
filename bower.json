@@ -16,7 +16,9 @@
     "ngInfiniteScroll": "~1.2.0",
     "jquery-waypoints": "~2.0.5",
     "angular-scroll": "~0.6.2",
-    "angulike": "*"
+    "angulike": "*",
+    "snap.svg": "~0.3.0",
+    "classie": "~1.0.1"
   },
   "devDependencies": {
     "angular-mocks": "~1.2.0",

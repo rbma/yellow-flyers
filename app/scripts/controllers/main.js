@@ -74,11 +74,7 @@ angular.module('yellowFlyersApp').controller('MainCtrl', [
 			}
 
 			
-
-
 			allFlyers = flyers;
-
-			
 
 			$scope.flyers = pageService.customArray(allFlyers, splitAmount);
 

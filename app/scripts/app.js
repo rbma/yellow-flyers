@@ -20,6 +20,10 @@ angular
         templateUrl: 'views/intro.html',
         controller: 'IntroCtrl'
       })
+      .when('/about', {
+        templateUrl: 'views/about.html',
+        controller: 'AboutCtrl'
+      })
       .when('/page1', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
@@ -55,6 +59,10 @@ angular
       .when('/page9', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
+      })
+      .when('/about', {
+        templateUrl: 'views/about.html',
+        controller: 'AboutCtrl'
       })
       .otherwise({
         redirectTo: '/'

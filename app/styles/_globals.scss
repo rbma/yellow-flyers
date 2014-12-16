@@ -26,6 +26,11 @@ ng-view, .ng-scope{
     display: none; 
 }
 
+.lowercase{
+	text-transform: lowercase !important;
+	font-size: 0.7em;
+}
+
 
 footer{
 	position: relative;

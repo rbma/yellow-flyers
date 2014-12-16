@@ -17,7 +17,7 @@ angular.module('yellowFlyersApp').directive('navi', ['$location', '$rootScope', 
 			{
 				'pageHash':'/',
 				'order': 0,
-				'title': 'ABOUT'
+				'title': 'intro'
 			},
 			{
 				'pageHash': '/page1',
@@ -64,6 +64,11 @@ angular.module('yellowFlyersApp').directive('navi', ['$location', '$rootScope', 
 				'order':9,
 				'title': 'Page 9'
 			},
+			{
+				'pageHash':'/about',
+				'order': 10,
+				'title': 'about'
+			}
 
 		];
 
@@ -99,71 +104,10 @@ angular.module('yellowFlyersApp').directive('navi', ['$location', '$rootScope', 
 				self.navOpen = false;
 			},
 
-			nextPage: function(){
-				var self = this;
-
-				self.init();
-
-				//get new location
-				self.path = $location.path();
-
-				var currentPath = self.path;
-
-				//find path object
-				var currentPage = self.pages.filter(function(page){
-					return page.pageHash === currentPath;
-				});
-
-				var length = pages.length;
-
-				//get order of path object
-				var order = currentPage[0].order;
-
-				//advance to next item in array
-				if (order + 1 < length){
-					var nextPage = self.pages[order + 1];
-					$location.path(nextPage.pageHash);
-				}
-				else{
-					$location.path(pages[1].pageHash);
-				}
-
-				
-			},
-			previousPage: function(){
-				
-				var self = this;
-
-				self.init();
-				
-				//get new location
-				self.path = $location.path();
-
-				var currentPath = self.path;
-
-				//find path object
-				var currentPage = self.pages.filter(function(page){
-					return page.pageHash === currentPath;
-				});
-
-
-				//get order of path object
-				var order = currentPage[0].order;
-
-				//rewind to prev item in array
-				if (order -1 > 0){
-					var nextPage = self.pages[order - 1];
-					$location.path(nextPage.pageHash);
-				}
-				else{
-					$location.path(pages[9].pageHash);
-				}
-
-			}
 		};
 
 		//listen route changes to reset nav
-		$rootScope.$on('routeChange', function(){
+		$rootScope.$on('$locationChangeStart', function(){
 			$scope.nav.navOpen = false;
 			$scope.nav.init();
 		});
