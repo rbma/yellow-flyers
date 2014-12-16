@@ -19,6 +19,13 @@
 			display: block; 
 			z-index: 99999999;
 		}
+		@media (max-width: $phone){
+			top: 50px;
+			right: 20px;
+			.fa{
+				font-size: 2em;
+			}
+		}
 	}
 	.modal-image-wrapper{
 		width: 100%;
@@ -96,6 +103,9 @@
 				&.active{
 					@include transform(translateX(0));
 				}
+				@media (max-width: $phone){
+					display: none;
+				}
 			}
 			
 			img{
@@ -106,10 +116,16 @@
 				left: 25%;
 				width: 50%;
 				height: auto;
+				@include backface-visibility(hidden);
 				display: inline-block;
 				box-shadow: 5px 5px 10px black !important;
 				&.active{
 					@include transform(translateX(0));
+				}
+				@media (max-width: $phone){
+					top: 35%;
+					width: 90%;
+					left: 5%;
 				}
 			}	
 		}

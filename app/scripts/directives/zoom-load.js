@@ -6,11 +6,12 @@
  * @description
  * # zoomLoad
  */
-angular.module('yellowFlyersApp').directive('zoomLoad', ['$rootScope', '$window', function ($rootScope, $window) {
+angular.module('yellowFlyersApp').directive('zoomLoad', ['$rootScope', '$window', '$detection', function ($rootScope, $window, $detection) {
 	return {
 		restrict: 'A',
 		link: function($scope, element, attrs){
 
+		
 			//index
 			var order = attrs.order;
 
@@ -39,13 +40,21 @@ angular.module('yellowFlyersApp').directive('zoomLoad', ['$rootScope', '$window'
 				if (img.height > (winHeight * 0.7)){
 					img.width = winWidth * 0.5;
 				}
-				
-				//attach loupe
-				element.okzoom({
-					width: 300,
-					height: 300,
-					round: true
-				});
+
+				//bypass entirely if mobile
+				if ($detection.isiOS() || $detection.isAndroid() || $detection.isWindowsPhone() || $detection.isBB10()){
+					console.log('mobile');
+					$rootScope.$broadcast('mobileDevice');
+				}
+
+				else{
+					//attach loupe
+					element.okzoom({
+						width: 300,
+						height: 300,
+						round: true
+					});
+				}
 			};
 
 			//show first image

@@ -27,13 +27,25 @@
 			width: 50%;
 			height: auto;
 		}
+		@media (max-width: $phone){
+			width: 90%;
+			height: 80%;
+			background: black;
+		}
 	}
 	h1,p{
 		max-width: 60%;
+		-webkit-font-smoothing: antialiased;
+		@media (max-width: $phone){
+			max-width: 80%;
+		}
 	}
 	h1{
 		font-size: 3em;
 		font-family: 'HelveticaRounded';
+		@media (max-width: $phone){
+			font-size: 2em;
+		}
 	}
 	p{
 		font-size: 1.2em;
@@ -44,6 +56,9 @@
 		}
 		em{
 			font-size: 0.75em;
+		}
+		@media (max-width: $phone){
+			font-size: 1em;
 		}
 	}
 	a.go{
@@ -80,6 +95,10 @@
 		-webkit-tap-highlight-color: rgba(0,0,0,0);
 		-webkit-tap-highlight-color: transparent; /* For some Androids */
 		-webkit-touch-callout: none;
+		@media (max-width: $phone){
+			width: 100px;
+			height: 50px;
+		}
 	}
 
 
@@ -94,6 +113,9 @@
 		font-weight: bold;
 		@include user-select(none);
 		-webkit-touch-callout: none;
+		@media (max-width: $phone){
+			font-size: 1em;
+		}
 	}
 
 	.morph-shape {

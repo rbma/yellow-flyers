@@ -26,6 +26,12 @@ angular.module('yellowFlyersApp').controller('MainCtrl', [
 		//spinner
 		$scope.loading = true;
 
+		$scope.mobile = false;
+
+		$rootScope.$on('mobileDevice', function(){
+			$scope.mobile = true;
+		});
+
 
 
 		//call table function with promise. To-Do: Set local JSON fallback
@@ -35,8 +41,6 @@ angular.module('yellowFlyersApp').controller('MainCtrl', [
 
 			flyers = data.data.Flyers.elements;
 			globals = data.data.Globals.elements[0];
-
-			console.log(globals);
 
 			flyerLength = flyers.length;
 

@@ -13,11 +13,11 @@
 		</div>
 		
 		<div class="arrows">
-			<i class="arrow right fa fa-angle-right" ng-click="modal.advance()"></i>
-			<i class="arrow left fa fa-angle-left" ng-click="modal.rewind()"></i>
+			<i class="arrow right fa fa-angle-right" ng-if="!mobile" ng-click="modal.advance()"></i>
+			<i class="arrow left fa fa-angle-left" ng-if="!mobile" ng-click="modal.rewind()"></i>
 		</div>
 		
-		<div class="modal-image">
+		<div class="modal-image" id="modal-image" ng-swipe-left="modal.rewind()" ng-swipe-right="modal.advance()">
 			<div class="image-box" ng-repeat="image in modalImages">
 				<img src data-order="{{$index}}" data-img="{{image}}" zoom-load />
 				<h2 class="modal-title">Page {{$index + 1}}</h2>

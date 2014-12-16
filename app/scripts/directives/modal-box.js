@@ -1,5 +1,6 @@
 'use strict';
 
+/*global $:false, Hammer:false */
 
 /**
  * @ngdoc directive
@@ -7,7 +8,7 @@
  * @description
  * # modalBox
  */
-angular.module('yellowFlyersApp').directive('modalBox', ['$rootScope', function ($rootScope) {
+angular.module('yellowFlyersApp').directive('modalBox', ['$rootScope', '$detection', function ($rootScope, $detection) {
 	
 	var link = function($scope){
 
@@ -20,6 +21,10 @@ angular.module('yellowFlyersApp').directive('modalBox', ['$rootScope', function 
 			
 			//currently closed
 			open: false,
+
+			mobile: false,
+
+			element: document.getElementById('modal-image'),
 			
 			//used to store how many images are in array
 			count: 0,
@@ -40,8 +45,14 @@ angular.module('yellowFlyersApp').directive('modalBox', ['$rootScope', function 
 				
 				//currently visible modal image index count
 				$scope.modalSelect = imgIndex;
-				
 
+				//check for mobile
+				if ($detection.isiOS() || $detection.isAndroid() || $detection.isWindowsPhone() || $detection.isBB10()){
+					self.mobile = true;
+					//set up mobile listeners
+					self.mobileInit();
+				}
+				
 			},
 
 
@@ -98,7 +109,6 @@ angular.module('yellowFlyersApp').directive('modalBox', ['$rootScope', function 
 				}
 
 				$rootScope.$broadcast('imgChange', $scope.modalSelect);
-				
 			}
 		};
 	};

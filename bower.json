@@ -18,7 +18,10 @@
     "angular-scroll": "~0.6.2",
     "angulike": "*",
     "snap.svg": "~0.3.0",
-    "classie": "~1.0.1"
+    "classie": "~1.0.1",
+    "angular-adaptive-detection": "~0.4.1",
+    "hammer.js": "~2.0.4",
+    "angular-touch": "~1.3.7"
   },
   "devDependencies": {
     "angular-mocks": "~1.2.0",

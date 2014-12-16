@@ -12,7 +12,9 @@ angular
   .module('yellowFlyersApp', [
     'ngAnimate',
     'ngRoute',
-    'ngSanitize'
+    'ngTouch',
+    'ngSanitize',
+    'adaptive.detection'
   ])
   .config(function ($routeProvider) {
     $routeProvider
