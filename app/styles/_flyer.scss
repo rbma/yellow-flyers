@@ -18,6 +18,7 @@
 	left: 0;
 	background-color: white;
 	z-index: 7;
+	font-weight: lighter;
 	color: black;
 	@include display(flex);
 	@include flex-direction(column);
@@ -91,6 +92,11 @@
 	background-position: top left;
 	background-repeat: repeat-x !important;
 	background-attachment: fixed !important;
+	@media (max-width: $tab){
+		background-attachment: scroll !important;
+		background-size: contain !important;
+		background-position: center center;
+	}
 	@media (max-width: $phone){
 		background-attachment: scroll !important;
 		background-size: contain !important;

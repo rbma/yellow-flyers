@@ -1,6 +1,5 @@
 'use strict';
 
-/*global $:false, Hammer:false */
 
 /**
  * @ngdoc directive

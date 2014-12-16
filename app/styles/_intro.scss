@@ -27,6 +27,12 @@
 			width: 50%;
 			height: auto;
 		}
+		@media (max-width: $tab){
+			width: 80%;
+			height: 80%;
+			background: black;
+		}
+
 		@media (max-width: $phone){
 			width: 90%;
 			height: 80%;
@@ -58,7 +64,7 @@
 			font-size: 0.75em;
 		}
 		@media (max-width: $phone){
-			font-size: 1em;
+			font-size: 0.7em;
 		}
 	}
 	a.go{
@@ -91,13 +97,14 @@
 		position: relative;
 		margin: 1em;
 		padding: 0;
+		margin-bottom: 40px;
 		@include user-select(none);
 		-webkit-tap-highlight-color: rgba(0,0,0,0);
 		-webkit-tap-highlight-color: transparent; /* For some Androids */
 		-webkit-touch-callout: none;
 		@media (max-width: $phone){
-			width: 100px;
-			height: 50px;
+			width: 75px;
+			height: 35px;
 		}
 	}
 
@@ -114,7 +121,7 @@
 		@include user-select(none);
 		-webkit-touch-callout: none;
 		@media (max-width: $phone){
-			font-size: 1em;
+			font-size: 0.8em;
 		}
 	}
 

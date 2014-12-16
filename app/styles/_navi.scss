@@ -78,7 +78,7 @@
 	width: 100%;
 	bottom: 50px;
 	left: 0;
-	background: rgba(0,0,0,0.85);
+	background: rgba(0,0,0,1);
 	text-align: center;
 	@include display(flex);
 	@include flex-direction(column);
@@ -132,11 +132,22 @@
 					@include transform(scale(1.2));
 				}
 				@media (max-width: $phone){
-					font-size: 1.2em;
-					margin-bottom: 20px;
+					font-size: 1em;
+					// margin-bottom: 20px;
 					&:hover{
 						@include transform(none);
 					}
+				}
+				&.lowercase{
+					margin-top: 30px;
+					font-size: 0.8em;
+					font-family: 'Clan';
+					-webkit-font-smoothing: antialiased;
+				}
+				img{
+					max-width: 50px;
+					vertical-align: bottom;
+					margin-right: 5px;
 				}
 
 			}

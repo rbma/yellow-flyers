@@ -15,8 +15,10 @@ angular.module('yellowFlyersApp').directive('zoomLoad', ['$rootScope', '$window'
 			//index
 			var order = attrs.order;
 
+			var targetImg = element.find('img');
+
 			//page number
-			var title = element.parent().find('h2');
+			var title = element.find('h2');
 
 			var winHeight = $window.innerHeight;
 			var winWidth = $window.innerWidth;
@@ -33,15 +35,10 @@ angular.module('yellowFlyersApp').directive('zoomLoad', ['$rootScope', '$window'
 			//when image is ready, bind to src
 			img.onload = function(){
 				
-				element.attr('src', img.src);
+				targetImg.attr('src', img.src);
 
-				//get ref to height
-				//if height is too great, then reduce width
-				if (img.height > (winHeight * 0.7)){
-					img.width = winWidth * 0.5;
-				}
 
-				//bypass entirely if mobile
+				//bypass zoom entirely if mobile
 				if ($detection.isiOS() || $detection.isAndroid() || $detection.isWindowsPhone() || $detection.isBB10()){
 					console.log('mobile');
 					$rootScope.$broadcast('mobileDevice');
@@ -49,7 +46,7 @@ angular.module('yellowFlyersApp').directive('zoomLoad', ['$rootScope', '$window'
 
 				else{
 					//attach loupe
-					element.okzoom({
+					targetImg.okzoom({
 						width: 300,
 						height: 300,
 						round: true
