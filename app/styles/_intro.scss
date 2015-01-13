@@ -33,10 +33,15 @@
 	@include justify-content(center);
 	font-family: 'HelveticaRounded';
 	cursor: auto !important;
-	color: white;
+	color: black;
+	background: rgba(255,255,255,0.95);
+	p{
+		font-weight: lighter;
+		font-family: 'Karla';
+	}
 	a{
 		font-size: 3em;
-		color: white;
+		color: black;
 		text-decoration: none;
 		@include animation(bounce 1s infinite alternate-reverse);
 	}
@@ -49,8 +54,10 @@
 	line-height: 1;
 	margin: 0;
 	@include user-select(none);
-	@include animation(color 5s infinite);
-	-webkit-text-stroke: 1px white;
+	@include animation(color 5s infinite alternate-reverse);
+	@media (max-width: $phone){
+		font-size: 2em;
+	}
 }
 
 

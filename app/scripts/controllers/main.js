@@ -17,21 +17,14 @@ angular.module('yellowFlyersApp').controller('MainCtrl', [
 	'pageService',
 	function ($scope, $rootScope, $interval, $location, tabletopService, pageService) {
 
-		//get current url page
+		//get current url page and run quick check to see if we should display intro
 		var path = $location.path();
+		if (path === '/'){
+			$scope.displayIntro = true;
+		}
 
-		//partial array of 20
-		$scope.flyers = [];
 
-		//spinner
-		$scope.loading = true;
-
-		$scope.mobile = false;
-
-		$rootScope.$on('mobileDevice', function(){
-			$scope.mobile = true;
-		});
-
+		$scope.displayIntro = false;
 
 
 		//call table function with promise. To-Do: Set local JSON fallback
@@ -44,25 +37,14 @@ angular.module('yellowFlyersApp').controller('MainCtrl', [
 
 			flyerLength = flyers.length;
 
-			
-
 			//store max result so we can divvy up pages
 			pageService.storeLength(flyerLength);
-
-			
-
 
 			//store total number of items 
 			tabletopService.storeLength(flyers);
 
-			
-
-
 			//clean up data
 			tabletopService.cleanData(flyers);
-
-			
-
 
 			//split data into pages. return value is array [splitAmount, page]
 			splitAmount = pageService.pageRange(path)[0];
@@ -82,7 +64,6 @@ angular.module('yellowFlyersApp').controller('MainCtrl', [
 
 			$scope.flyers = pageService.customArray(allFlyers, splitAmount);
 
-			$scope.loading = false;
 
 			//error handling
 		}, function(error){

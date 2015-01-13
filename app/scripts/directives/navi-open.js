@@ -17,9 +17,8 @@ angular.module('yellowFlyersApp').directive('naviOpen', ['$location', function (
 		$scope.go = function(path){
 			$location.path(path);
 			naviOpen.removeClass('active');
-		};
 
-		console.log($scope.pages);
+		};
 	};
 
 

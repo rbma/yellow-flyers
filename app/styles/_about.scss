@@ -6,14 +6,14 @@
 	min-height: 100%;
 	height: auto;
 	overflow-y: scroll;
-	background: black;
-	color: white;
+	background: rgba(255,255,255,0.95);
+	color: black;
 	@include display(flex);
 	@include flex-direction(column);
 	@include align-items(center);
 	@include justify-content(center);
 	h1{
-		font-family: 'Maison', 'HelveticaRounded';
+		font-family: 'HelveticaRounded';
 		text-align: center;
 		font-size: 3em;
 		margin-bottom: 0;
@@ -31,8 +31,9 @@
 		}
 	}
 	a{
-		color: white;
-		text-decoration: underline;
+		border-bottom: 5px solid black;
+		text-decoration: none;
+		color: black;
 	}
 
 }

@@ -1,11 +1,35 @@
+@include keyframes(fadeOut){
+	from{
+		opacity: 1;
+	}
+	to{
+		opacity: 0;
+	}
+}
+
+@include keyframes(fadeIn){
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
 .modal{
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(0,0,0,0.9);
+	background: rgba(255,255,255,0.9);
 	background-size: cover;
+	&.ng-hide-add{
+		@include animation(fadeOut 0.5s ease);
+	}
+	&.ng-hide-leave{
+		@include animation(fadeIn 0.5 ease);
+	}
 	.exit{
 		height: 33px;
 		width: 33px;
@@ -28,12 +52,12 @@
 		&:before{
 			bottom: 50%;
 			@include transform(rotate(45deg));
-			background-color: white;
+			background-color:black;
 		}
 		&:after{
 			bottom: 50%;
 			@include transform(rotate(-45deg));
-			background-color: white;
+			background-color: black;
 		}
 	}
 	.modal-image-wrapper{
@@ -47,7 +71,7 @@
 			left: 50%;
 			top: 50%;
 			.fa{
-				color: white;
+				color: black;
 				font-size: 1.5em;
 				position: relative;
 				left: -50%;
@@ -61,7 +85,7 @@
 			top: 50%;
 			width: 100%;
 			.arrow{
-				color: white;
+				color: black;
 				display: inline-block;
 				position: relative;
 				z-index: 999999999;
@@ -103,7 +127,7 @@
 			.modal-title{
 				position: absolute;
 				left: 20px;
-				color: white;
+				color: black;
 				font-size: 2em;
 				margin: 0;
 				line-height: 1;

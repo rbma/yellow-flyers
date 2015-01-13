@@ -111,8 +111,10 @@ angular.module('yellowFlyersApp').directive('navi', ['$location', '$rootScope', 
 		//listen route changes to reset nav
 		$rootScope.$on('$locationChangeStart', function(){
 			$scope.nav.navOpen = false;
+			$scope.nav.icon.removeClass('close');
 			$scope.nav.init();
 		});
+
 
 		$scope.nav.init();
 	};

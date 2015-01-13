@@ -16,10 +16,10 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-color: white;
+	background-color: black;
 	z-index: 7;
 	font-weight: lighter;
-	color: black;
+	color: white;
 	@include display(flex);
 	@include flex-direction(column);
 	@include justify-content(center);
@@ -105,15 +105,35 @@
 		@include display(flex);
 		@include align-items(center);
 		@include justify-content(center);
-		height: 50px !important;
+		height: 70px !important;
 		//account for footer
 		margin-bottom: 50px;
-		background-color: yellow;
+		background-color: white;
+		border-bottom: 1px solid black;
+		font-family: 'HelveticaRounded';
+		border-top: 1px solid black;
+		@include box-sizing(border-box);
+		cursor: auto !important;
+		color: black;
+		h1{
+			font-size: 1em;
+			display: inline-block;
+			letter-spacing: -1px;
+			margin: 0 20px;
+			@include transition(transform .1s linear);
+			&:hover{
+				@include transform(scale(1.1));
+			}
+			span{
+				font-size: 0.5em;
+				vertical-align: middle;
+			}
+		}
 	}
 	
 	.title{
-		background-color: black;
-		color: white;
+		background-color: white;
+		color: black;
 		display: inline-block;
 		padding: 10px;
 		margin-left: 20px;
@@ -121,9 +141,15 @@
 		font-size: 3em;
 		line-height: 1;
 		font-weight: lighter;
+		border: 5px solid black;
+		@include box-sizing(border-box);
+		box-shadow: 2px 2px 5px black;
 		&:hover{
 			background-color: white;
 			color: black;
+		}
+		@media (min-width: $widescreen){
+			width: 30%;
 		}
 		@media (max-width: $phone){
 			font-size: 1.2em;

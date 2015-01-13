@@ -46,10 +46,7 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-        <a href="https://twitter.com/share" class="twitter-share-button" data-via="rbma">Tweet</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-      <div class="fb-like" data-href="http://www.redbullmusicacademy.com" data-width="127" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>  
-      
+
       <check-mobile></check-mobile>
       <div ng-view=""></div>
 
@@ -57,14 +54,6 @@
       <!-- <div navi ng-show="nav.showNav"></div> -->
       <div navi></div>
 
-
-      <div id="fb-root"></div>
-
-      <!--FB-->
-      <script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));
-      </script>
-
-      
 
 
 
@@ -78,6 +67,11 @@
        ga('create', 'UA-XXXXX-X');
        ga('send', 'pageview');
     </script>
+
+    <script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
     <!-- build:js(.) scripts/oldieshim.js -->
     <!--[if lt IE 9]>
@@ -113,11 +107,12 @@
         <script src="scripts/services/flyer-position.js"></script>
         <script src="scripts/services/tabletop-service.js"></script>
         <script src="scripts/services/page-service.js"></script>
-        <script src="scripts/controllers/intro.js"></script>
         <script src="scripts/directives/navi.js"></script>
         <script src="scripts/directives/navi-open.js"></script>
         <script src="scripts/controllers/about.js"></script>
         <script src="scripts/directives/button-bounce.js"></script>
+        <script src="scripts/directives/next-page.js"></script>
+        <script src="scripts/services/mobile-service.js"></script>
         <!-- endbuild -->
 </body>
 </html>
