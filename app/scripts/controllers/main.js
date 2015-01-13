@@ -15,16 +15,23 @@ angular.module('yellowFlyersApp').controller('MainCtrl', [
 	'$location',
 	'tabletopService',
 	'pageService',
-	function ($scope, $rootScope, $interval, $location, tabletopService, pageService) {
+	'mobileService',
+	function ($scope, $rootScope, $interval, $location, tabletopService, pageService, mobileService) {
 
 		//get current url page and run quick check to see if we should display intro
 		var path = $location.path();
+		
+		$scope.displayIntro = false;
+
 		if (path === '/'){
 			$scope.displayIntro = true;
 		}
 
 
-		$scope.displayIntro = false;
+		//return promise from mobile check 
+		mobileService.isMobile().then(function(data){
+			$scope.mobile = data;
+		});
 
 
 		//call table function with promise. To-Do: Set local JSON fallback
@@ -69,8 +76,6 @@ angular.module('yellowFlyersApp').controller('MainCtrl', [
 		}, function(error){
 			console.log('Error getting data.' + error);
 		});
-
-
 
 	}
 ]);

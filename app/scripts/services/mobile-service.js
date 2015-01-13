@@ -7,17 +7,36 @@
  * # mobileService
  * Factory in the yellowFlyersApp.
  */
-angular.module('yellowFlyersApp').factory('mobileService', ['$detection', function ($detection) {
+angular.module('yellowFlyersApp').factory('mobileService', ['$q', '$detection', function ($q, $detection) {
 
 
   var mobile = false;
 
   var isMobile = function(){
-    if ($detection.isAndroid() || $detection.isiOS() || $detection.isWindowsPhone() || $detection.isBB10){
+    var deferred = $q.defer();
+
+    if ($detection.isAndroid()){
+      mobile = true;
+    }
+    if ($detection.isiOS()){
       mobile = true;
     }
 
-    return mobile;
+    if ($detection.isWindowsPhone()){
+      mobile = true;
+    }
+
+    if ($detection.isBB10()){
+      mobile = true;
+    }
+
+    else{
+      mobile = false;
+    }
+
+    deferred.resolve(mobile);
+
+    return deferred.promise;
   };
 
   // Public API here

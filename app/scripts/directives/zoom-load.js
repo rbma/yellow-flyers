@@ -50,7 +50,7 @@ angular.module('yellowFlyersApp').directive('zoomLoad', ['$rootScope', '$window'
 						width: 300,
 						height: 300,
 						round: true,
-						background: '#000000'
+						background: 'rgba(255,255,255,0.9)'
 					});
 				}
 			};
