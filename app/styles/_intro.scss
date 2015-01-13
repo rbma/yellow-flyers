@@ -1,149 +1,57 @@
+@include keyframes(color){
+	0%{
+		color: $pink;
+	}
+	33%{
+		color: $yellow;
+	}
+	66%{
+		color: $green;
+	}
+	100%{
+		color: $purple;
+	}
+}
+
+@include keyframes(bounce){
+	0%{
+		opacity: 1;
+	}
+
+	50%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
 .intro{
-	position: fixed;
-	top: 0;
-	left: 0;
-	margin: 0;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	background: url(../images/flyer-collage.jpg) no-repeat center center;
-	background-size: cover;
-	color: white;
 	@include display(flex);
 	@include flex-direction(column);
-	@include justify-content(center);
 	@include align-items(center);
-	.intro-text{
-		width: 70%;
-		height: 75%;
-		position: relative;
-		background: rgba(0,0,0,0.9);
-		text-align: center;
-		@include display(flex);
-		@include flex-direction(column);
-		@include justify-content(center);
-		@include align-items(center);
-		img{
-			width: 50%;
-			height: auto;
-		}
-		@media (max-width: $tab){
-			width: 80%;
-			height: 80%;
-			background: black;
-		}
-
-		@media (max-width: $phone){
-			width: 90%;
-			height: 80%;
-			background: black;
-		}
-	}
-	h1,p{
-		max-width: 60%;
-		-webkit-font-smoothing: antialiased;
-		@media (max-width: $phone){
-			max-width: 80%;
-		}
-	}
-	h1{
+	@include justify-content(center);
+	font-family: 'HelveticaRounded';
+	cursor: auto !important;
+	color: white;
+	a{
 		font-size: 3em;
-		font-family: 'HelveticaRounded';
-		@media (max-width: $phone){
-			font-size: 2em;
-		}
-	}
-	p{
-		font-size: 1.2em;
-		margin-top: 20px;
-		line-height: 1.5;
-		a{
-			color: white;
-		}
-		em{
-			font-size: 0.75em;
-		}
-		@media (max-width: $phone){
-			font-size: 0.7em;
-		}
-	}
-	a.go{
-		margin-top: 48px;
-		padding: 10px;
-		border: 1px solid white;
-		box-sizing: border-box;
 		color: white;
 		text-decoration: none;
-		font-size: 1.5em;
-		width: 100px;
-		vertical-align: bottom;
-		text-align: center;
-		&:hover{
-			background: white;
-			color: black;
-		}
+		@include animation(bounce 1s infinite alternate-reverse);
 	}
-
-	.button-wrap {
-		margin-bottom: 3em;
-	}
-
-	.button {
-		background: none;
-		border: none;
-		width: 150px;
-		height: 75px;
-		outline: none;
-		position: relative;
-		margin: 1em;
-		padding: 0;
-		margin-bottom: 40px;
-		@include user-select(none);
-		-webkit-tap-highlight-color: rgba(0,0,0,0);
-		-webkit-tap-highlight-color: transparent; /* For some Androids */
-		-webkit-touch-callout: none;
-		@media (max-width: $phone){
-			width: 75px;
-			height: 35px;
-		}
-	}
-
-
-	.button__text {
-		display: block;
-		padding: 10px;
-		text-align: center;
-		position: relative;
-		z-index: 100;
-		font-size: 1.5em;
-		color: black;
-		font-weight: bold;
-		@include user-select(none);
-		-webkit-touch-callout: none;
-		@media (max-width: $phone){
-			font-size: 0.8em;
-		}
-	}
-
-	.morph-shape {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		left: 0;
-	}
-
-	.button--line .morph-shape svg {
-		fill: none;
-		stroke: #fff;
-		stroke-width: 4px;
-		stroke-linecap: round;
-	}
-
-	.button--fill .morph-shape svg {
-		fill: white;
-	}
-
 }
+
+.intro-title{
+	text-align: center;
+	font-size: 10em;
+	color: $pink;
+	line-height: 1;
+	margin: 0;
+	@include user-select(none);
+	@include animation(color 5s infinite);
+	-webkit-text-stroke: 1px white;
+}
+
 
 

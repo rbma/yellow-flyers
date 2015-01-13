@@ -101,13 +101,25 @@
 		background-attachment: scroll !important;
 		background-size: contain !important;
 	}
+	&.last{
+		@include display(flex);
+		@include align-items(center);
+		@include justify-content(center);
+		height: 50px !important;
+		//account for footer
+		margin-bottom: 50px;
+		background-color: yellow;
+	}
+	
 	.title{
 		background-color: black;
 		color: white;
 		display: inline-block;
 		padding: 10px;
 		margin-left: 20px;
-		max-width: 80%;
+		max-width: 50%;
+		font-size: 3em;
+		line-height: 1;
 		font-weight: lighter;
 		&:hover{
 			background-color: white;

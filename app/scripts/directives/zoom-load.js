@@ -46,11 +46,12 @@ angular.module('yellowFlyersApp').directive('zoomLoad', ['$rootScope', '$window'
 
 				else{
 					//attach loupe
-					targetImg.okzoom({
-						width: 300,
-						height: 300,
-						round: true
-					});
+					// targetImg.okzoom({
+					// 	width: 300,
+					// 	height: 300,
+					// 	round: true
+					// });
+					Zoomerang.listent(targetImg);
 				}
 			};
 

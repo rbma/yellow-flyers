@@ -14,21 +14,18 @@ angular
     'ngRoute',
     'ngTouch',
     'ngSanitize',
+    'duScroll',
     'adaptive.detection'
   ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/intro.html',
-        controller: 'IntroCtrl'
+        templateUrl: 'views/main.html',
+        controller: 'MainCtrl'
       })
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
-      })
-      .when('/page1', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
       })
       .when('/page2', {
         templateUrl: 'views/main.html',

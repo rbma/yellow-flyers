@@ -75,9 +75,11 @@ angular.module('yellowFlyersApp').directive('navi', ['$location', '$rootScope', 
 		$scope.nav = {
 			path: $location.path(),
 			naviOpen: $('.navi-open'),
+			icon: $('#nav-icon'),
 			navOpen: false,
 			showNav: false,
 			pages: pages,
+			currentlyOpen: false,
 			init: function(){
 				var self = this;
 				self.path = $location.path();
@@ -89,21 +91,20 @@ angular.module('yellowFlyersApp').directive('navi', ['$location', '$rootScope', 
 				}
 
 			},
-			
-			openNav: function(){
-				var self = this;
-				console.log('open');
-				self.naviOpen.addClass('active');
-				self.navOpen = true;
 
-			},
-
-			closeNav: function(){
+			navToggle: function(){
 				var self = this;
-				console.log('close');
-				self.naviOpen.removeClass('active');
-				self.navOpen = false;
-			},
+				if (self.navOpen){
+					self.naviOpen.removeClass('active');
+					self.icon.removeClass('close');
+					self.navOpen = false;
+				}
+				else{
+					self.naviOpen.addClass('active');
+					self.icon.addClass('close');
+					self.navOpen = true;
+				}
+			}
 
 		};
 
