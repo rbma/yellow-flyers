@@ -7,7 +7,7 @@
 	left: 0;
 	width: 100%;
 	height: 70px;
-	z-index: 999999999999;
+	z-index: 99999999;
 	border-top: 1px solid black;
 	box-sizing: border-box;
 	@include display(flex);
@@ -16,6 +16,14 @@
 	@include align-items(center);
 	cursor: auto !important;
 	text-align: center;
+	@media (max-width: $phone){
+		height: 50px;
+		right: 0 !important;
+		left: 85%;
+		top: 0;
+		width: 15% !important;
+		border: 0;
+	}
 	.fb-like{
 		z-index: 999;
 		position: fixed !important;
@@ -23,6 +31,9 @@
 		right: 20px;
 		width: 127px;
 		height:32px;
+		@media (max-width: $phone){
+			display: none;
+		}
 	}
 
 	.twitter-share-button{
@@ -33,7 +44,7 @@
 		height: 32px;
 		width: 32px;
 		@media (max-width: $phone){
-			top: 7px;
+			display: none;
 		}
 	}
 	.burger{
@@ -76,7 +87,6 @@
 			}
 			&:after{
 				@include transform(rotate(-45deg));
-				width: 100%;
 				top: 50%;
 			}
 			
@@ -133,6 +143,13 @@
 	@include transition(transform .4s ease-in-out);
 	cursor: pointer !important;
 	color: black;
+	@media (max-width: $phone){
+		background: rgba(255,255,255,1);
+		bottom: 0;
+		@include transform(translateX(100%) translateY(0) translateZ(0));
+	}
+	
+
 	[ng-click],
 	[data-ng-click],
 	[x-ng-click] {
@@ -162,8 +179,11 @@
 	ul{
 		list-style-type: none;
 		padding: 0;
-		margin-top: 100px;
+		margin-top: 50px;
 		position: relative;
+		@media (max-width: $phone){
+			margin-top: 0;
+		}
 
 		a{
 			color:black;
@@ -179,18 +199,23 @@
 				font-weight: bold;
 				letter-spacing: -1px;
 				@include transition(all .2s linear);
+				@media (max-width: $tab){
+					font-size: 3em;
+					@media (orientation: landscape){
+						font-size: 2em;
+					}
+				}
+				@media (max-width: $phone){
+					font-size: 0.8em;
+					@media (orientation: landscape){
+						margin-bottom: 5px;
+					}
+				}
 				&.about-list{
 					border-bottom: 5px solid black;
 				}
 				&:hover{
 					@include transform(translateX(-5px));
-				}
-				@media (max-width: $phone){
-					font-size: 1em;
-					// margin-bottom: 20px;
-					&:hover{
-						@include transform(none);
-					}
 				}
 				&.lowercase{
 					margin-top: 30px;
@@ -204,7 +229,7 @@
 					vertical-align: bottom;
 					margin-right: 5px;
 					@media (max-width: $phone){
-						max-width: 50px;
+						max-width: 40px;
 					}
 				}
 

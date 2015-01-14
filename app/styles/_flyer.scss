@@ -1,3 +1,14 @@
+@include keyframes(updown){
+	0%{
+		@include transform(translateY(0));
+	}
+	50%{
+		@include transform(translateY(20px));
+	}
+	100%{
+		@include transform(translateY(0));
+	}
+}
 
 
 .flyer-wrapper{
@@ -7,13 +18,18 @@
 	background: black;
 	margin: 0;
 	padding: 0;
-	// -webkit-overflow-scrolling: touch;
+	-webkit-overflow-scrolling: touch;
+	padding-bottom: 50px !important;
+	margin-bottom: 50px;
 }
+
+
+
 
 .loading{
 	width: 100%;
 	height: 100%;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	background-color: black;
@@ -69,18 +85,6 @@
 	cursor: url(//d1b56a2nqp2zss.cloudfront.net/hand-cursor.png), auto !important;
 }
 
-@include keyframes(updown){
-	0%{
-		@include transform(translateY(0));
-	}
-	50%{
-		@include transform(translateY(20px));
-	}
-	100%{
-		@include transform(translateY(0));
-	}
-}
-
 
 .flyer{
 	position: relative;
@@ -102,31 +106,32 @@
 		background-size: contain !important;
 	}
 	&.last{
-		@include display(flex);
-		@include align-items(center);
-		@include justify-content(center);
-		height: 70px !important;
-		//account for footer
-		margin-bottom: 50px;
+		height: 50px !important;
 		background-color: white;
-		border-bottom: 1px solid black;
 		font-family: 'HelveticaRounded';
-		border-top: 1px solid black;
 		@include box-sizing(border-box);
 		cursor: auto !important;
 		color: black;
+		margin: 0;
+		border-top: 1px solid black;
+		text-align: center;
 		h1{
 			font-size: 1em;
-			display: inline-block;
+			width: 100%;
+			padding-bottom: 75px;
+			vertical-align: middle;
+			display: inline;
+			line-height: 75px;
 			letter-spacing: -1px;
-			margin: 0 20px;
-			@include transition(transform .1s linear);
-			&:hover{
-				@include transform(scale(1.1));
-			}
+			cursor: pointer !important;
 			span{
 				font-size: 0.5em;
 				vertical-align: middle;
+				text-decoration: none !important;
+
+			}
+			@media (max-width: $phone){
+				padding-bottom: 25px;
 			}
 		}
 	}
@@ -151,8 +156,8 @@
 		@media (min-width: $widescreen){
 			width: 30%;
 		}
-		@media (max-width: $phone){
-			font-size: 1.2em;
+		@media (max-width: $tab){
+			font-size: 1.5em;
 			margin-top: 40px;
 		}
 	}

@@ -46,13 +46,20 @@ footer{
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 40%;
+	width: 100%;
 	height: auto;
-	background: rgba(255,255,255,0.95);
+	background: rgba(255,255,255,1);
 	display: block;
 	z-index: 99999999999;
 	border: 5px solid black;
 	@include box-sizing(border-box);
+	@media (max-width: $phone){
+		height: 100%;
+		overflow: hidden;
+		@include display(flex);
+		@include justify-content(center);
+		@include align-items(center);
+	}
 	.alert-exit{
 		height: 33px;
 		width: 33px;
@@ -87,11 +94,19 @@ footer{
 		padding: 30px;
 		text-transform: uppercase;
 		line-height: 1.5;
+		@media (max-width: $phone){
+			font-size: 0.8em;
+			line-height: 1.2;
+		}
 		a{
 			color: black;
 			font-weight: bold;
 			text-decoration: none;
 			border-bottom: 3px solid black;
+			@media (max-width: $phone){
+				border-bottom: 0;
+				text-decoration: underline;
+			}
 		}
 
 	}

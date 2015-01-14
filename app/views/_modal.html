@@ -18,11 +18,10 @@
 		<div class="modal-image" id="modal-image" ng-swipe-left="modal.advance()" ng-swipe-right="modal.rewind()">
 			<div class="image-box" ng-repeat="image in modalImages" zoom-load data-order="{{$index}}" data-img="{{image}}">
 				<img src />
+				<p class="mobile-instructions" ng-if="mobile">– Swipe left or right –</p>
 				<h2 class="modal-title">Page {{$index + 1}}</h2>
 			</div>
 		</div>
-
-
 
 
 	</div>
