@@ -6,10 +6,13 @@
  * @description
  * # zoomLoad
  */
-angular.module('yellowFlyersApp').directive('zoomLoad', ['$rootScope', '$window', '$detection', function ($rootScope, $window, $detection) {
+angular.module('yellowFlyersApp').directive('zoomLoad', ['$rootScope', '$window', 'mobileService', function ($rootScope, $window, mobileService) {
 	return {
 		restrict: 'A',
 		link: function($scope, element, attrs){
+
+
+
 
 		
 			//index
@@ -20,8 +23,6 @@ angular.module('yellowFlyersApp').directive('zoomLoad', ['$rootScope', '$window'
 			//page number
 			var title = element.find('h2');
 
-			var winHeight = $window.innerHeight;
-			var winWidth = $window.innerWidth;
 
 			//convert order to num
 			order = parseInt(order, 10);
@@ -37,22 +38,29 @@ angular.module('yellowFlyersApp').directive('zoomLoad', ['$rootScope', '$window'
 				
 				targetImg.attr('src', img.src);
 
+				mobileService.isMobile().then(function(data){
 
-				//bypass zoom entirely if mobile
-				if ($detection.isiOS() || $detection.isAndroid() || $detection.isWindowsPhone() || $detection.isBB10()){
-					console.log('mobile');
-					$rootScope.$broadcast('mobileDevice');
-				}
 
-				else{
-					//attach loupe
-					targetImg.okzoom({
-						width: 300,
-						height: 300,
-						round: true,
-						background: 'rgba(255,255,255,0.9)'
-					});
-				}
+					var mobile = data;
+
+					//bypass zoom entirely if mobile
+					if (mobile){
+						console.log('mobile');
+						return 0;
+					}
+
+					else{
+						//attach loupe
+						targetImg.okzoom({
+							width: 300,
+							height: 300,
+							round: true,
+							background: 'rgba(255,255,255,0.9)'
+						});
+					}
+
+				});
+				
 			};
 
 			//show first image

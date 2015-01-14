@@ -8,9 +8,15 @@
  * @description
  * # naviOpen
  */
-angular.module('yellowFlyersApp').directive('naviOpen', ['$location', function ($location) {
+angular.module('yellowFlyersApp').directive('naviOpen', ['$location', 'mobileService', function ($location, mobileService) {
 
 	var link = function($scope){
+
+		//return promise from mobile check 
+		mobileService.isMobile().then(function(data){
+			$scope.mobile = data;
+		});
+
 		var naviOpen = $('.navi-open');
 
 

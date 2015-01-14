@@ -1,8 +1,5 @@
 <div class="container">
-
-	<div ng-if="!mobile" class="mobile-container" ng-include="'views/_mobile.html'"></div>
-
-	<section ng-if="mobile" class="flyer-wrapper">
+	<section class="flyer-wrapper">
 		<!-- Once flyer data comes in, drop loader -->
 		<div class="loading" ng-if="!flyers">
 			<img src="images/yellow-square1.jpg" class="fa-spin" />

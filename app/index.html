@@ -41,6 +41,12 @@
 
   </head>
   <body ng-app="yellowFlyersApp">
+
+    <div mobile-alert class="mobile-alert" ng-show="showAlert">
+        <div class="alert-exit" ng-click="closeAlert()"></div>
+        <p>Hey there, this site contains hundreds and hundreds of flyer images. It uses a lot of data juice. We suggest viewing from a laptop, or <a href>checking out the feature in article form by clicking here.</a>
+        </p>
+    </div>
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -109,6 +115,7 @@
         <script src="scripts/directives/button-bounce.js"></script>
         <script src="scripts/directives/next-page.js"></script>
         <script src="scripts/services/mobile-service.js"></script>
+        <script src="scripts/directives/mobile-alert.js"></script>
         <!-- endbuild -->
 </body>
 </html>

@@ -13,6 +13,8 @@ angular.module('yellowFlyersApp').directive('navi', ['$location', '$rootScope', 
 
 	var link = function($scope){
 
+
+
 		var pages = [
 			{
 				'pageHash':'/',
@@ -121,7 +123,6 @@ angular.module('yellowFlyersApp').directive('navi', ['$location', '$rootScope', 
 
 	return {
 		templateUrl: 'views/_navi.html',
-		replace: true,
 		restrict: 'EA',
 		link: link
 	};

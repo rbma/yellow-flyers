@@ -42,5 +42,12 @@
 		@include user-select(none);
 		@include animation(color 5s infinite alternate-reverse);
 	}
+
+	.mobile-body{
+		font-family: 'Karla';
+		background: transparent;
+		width: 90%;
+		line-height: 1.5;
+	}
 }
 

@@ -39,6 +39,7 @@ angular.module('yellowFlyersApp').factory('mobileService', ['$q', '$detection', 
     return deferred.promise;
   };
 
+
   // Public API here
   return {
     isMobile: function () {
