@@ -38,13 +38,10 @@ angular.module('yellowFlyersApp').directive('zoomLoad', ['$rootScope', '$window'
 				
 				targetImg.attr('src', img.src);
 
-				mobileService.isMobile().then(function(data){
-
-
-					var mobile = data;
+				mobileService.isMobile().then(function(response){
 
 					//bypass zoom entirely if mobile
-					if (mobile){
+					if (response === true){
 						console.log('mobile');
 						return 0;
 					}

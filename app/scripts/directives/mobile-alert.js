@@ -17,7 +17,7 @@ angular.module('yellowFlyersApp').directive('mobileAlert', ['mobileService', fun
 			
 
 			mobileService.isMobile().then(function(response){
-				if (response){
+				if (response === false){
 					$scope.mobile = false;
 					$scope.showAlert = false;
 				}

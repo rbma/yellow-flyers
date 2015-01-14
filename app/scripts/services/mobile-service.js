@@ -10,9 +10,10 @@
 angular.module('yellowFlyersApp').factory('mobileService', ['$q', '$detection', function ($q, $detection) {
 
 
-  var mobile = false;
 
   var isMobile = function(){
+    var mobile;
+    
     var deferred = $q.defer();
 
     if ($detection.isAndroid()){
