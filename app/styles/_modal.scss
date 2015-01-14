@@ -24,6 +24,9 @@
 	height: 100%;
 	background: rgba(255,255,255,0.9);
 	background-size: cover;
+	@media (max-width: $tab){
+		background: white;
+	}
 	&.ng-hide-add{
 		@include animation(fadeOut 0.5s ease);
 	}
@@ -153,6 +156,9 @@
 				left: 0;
 				width: 100%;
 				display: block;
+				@media (orientation: landscape){
+					bottom: 0;
+				}
 			}
 
 			.image-box{

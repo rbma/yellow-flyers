@@ -34,10 +34,15 @@
 	font-family: 'HelveticaRounded';
 	cursor: auto !important;
 	color: black;
-	background: rgba(255,255,255,0.95);
+	background: rgba(255,255,255,1);
 	p{
 		font-weight: lighter;
 		font-family: 'Karla';
+		max-width: 80%;
+		@media (max-width: $phone){
+			font-size: 0.8em;
+			max-width: 90%;
+		}
 	}
 	a{
 		font-size: 3em;
@@ -56,7 +61,7 @@
 	@include user-select(none);
 	@include animation(color 5s infinite alternate-reverse);
 	@media (max-width: $phone){
-		font-size: 2em;
+		font-size: 3em;
 	}
 }
 

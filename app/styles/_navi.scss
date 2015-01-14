@@ -23,6 +23,10 @@
 		top: 0;
 		width: 15% !important;
 		border: 0;
+		@media (orientation: landscape){
+			left: 90%;
+			width: 10% !important;
+		}
 	}
 	.fb-like{
 		z-index: 999;
