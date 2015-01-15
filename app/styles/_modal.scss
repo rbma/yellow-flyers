@@ -45,7 +45,7 @@
 		cursor: pointer !important;
 		@media (max-width: $phone){
 			top: 10px;
-			left: 10px;
+			right: 10px;
 		}
 		&:before, &:after{
 			content: '';
@@ -132,6 +132,24 @@
 			text-align: center;
 
 			.modal-title{
+				font-size: 1em;
+				position: absolute;
+				top: 15px;
+				left: 15%;
+				width: 70%;
+				font-weight: normal;
+				@media (max-width: $phone){
+					top:5px;
+					width: 60%;
+					left: 20%;
+					font-size: 0.8em;
+					@media (orientation: landscape){
+						top: 5px;
+					}
+				}
+			}
+
+			.modal-page{
 				position: absolute;
 				left: 20px;
 				color: black;
@@ -144,7 +162,7 @@
 				&.active{
 					@include transform(translateX(0));
 				}
-				@media (max-width: $phone){
+				@media (max-width: $tab){
 					display: none;
 				}
 			}
@@ -157,7 +175,7 @@
 				width: 100%;
 				display: block;
 				@media (orientation: landscape){
-					bottom: 0;
+					bottom: -30px;
 				}
 			}
 

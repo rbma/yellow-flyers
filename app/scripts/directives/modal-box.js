@@ -27,6 +27,10 @@ angular.module('yellowFlyersApp').directive('modalBox', ['$rootScope', '$detecti
 			
 			//used to store how many images are in array
 			count: 0,
+
+			title: '',
+			date: '',
+			djs: '',
 			
 			//modal count. always starts on 0 image (first) and references parent flyer from ng-repeat
 			openModal: function(imgIndex, parentIndex){
@@ -34,6 +38,13 @@ angular.module('yellowFlyersApp').directive('modalBox', ['$rootScope', '$detecti
 				
 				//modal box is now open
 				self.open = true;
+
+				var thisFlyer = $scope.flyers[parentIndex];
+
+				//update info
+				self.title = thisFlyer.title;
+				self.date = thisFlyer.date;
+				self.djs = thisFlyer.djs;
 
 
 				//grab list of subimages from parent flyer, and split into array

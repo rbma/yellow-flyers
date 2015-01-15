@@ -101,9 +101,12 @@
 		background-size: contain !important;
 		background-position: center center;
 	}
-	@media (max-width: $phone){
+	@media (max-width: $tab){
 		background-attachment: scroll !important;
 		background-size: contain !important;
+		@include display(flex);
+		@include justify-content(center);
+		@include align-items(center);
 	}
 	&.last{
 		height: 50px !important;
@@ -115,13 +118,15 @@
 		margin: 0;
 		border-top: 1px solid black;
 		text-align: center;
+		@include display(flex);
+		@include justify-content(center);
+		@include align-items(center);
+		margin-bottom: 50px;
 		h1{
 			font-size: 1em;
-			width: 100%;
-			padding-bottom: 75px;
+			margin-left: 5px;
+			margin-right: 5px;
 			vertical-align: middle;
-			display: inline;
-			line-height: 75px;
 			letter-spacing: -1px;
 			cursor: pointer !important;
 			span{
@@ -130,8 +135,9 @@
 				text-decoration: none !important;
 
 			}
+			
 			@media (max-width: $phone){
-				padding-bottom: 25px;
+
 			}
 		}
 	}
@@ -157,8 +163,16 @@
 			width: 30%;
 		}
 		@media (max-width: $tab){
-			font-size: 1.5em;
+			font-size: 1.7em;
 			margin-top: 40px;
+			padding: 20px;
+		}
+		@media (max-width: $phone){
+			margin: 0;
+			font-size: 1em;
+			line-height: 1.2;
+			width: 70%;
+			max-width: 70%;
 		}
 	}
 }

@@ -9,6 +9,8 @@
 		<div class="loading-spinner">
 			<i class="fa fa-circle-o-notch fa-spin"></i>
 		</div>
+
+
 		
 		<div class="arrows">
 			<i class="arrow right fa fa-angle-right" ng-if="!mobile" ng-click="modal.advance()"></i>
@@ -16,10 +18,11 @@
 		</div>
 		
 		<div class="modal-image" id="modal-image" ng-swipe-left="modal.advance()" ng-swipe-right="modal.rewind()">
+			<h1 class="modal-title"><strong>{{modal.title}}</strong> / {{modal.date}} / {{modal.djs}}</h1>
 			<div class="image-box" ng-repeat="image in modalImages" zoom-load data-order="{{$index}}" data-img="{{image}}">
 				<img src />
 				<p class="mobile-instructions" ng-if="mobile">– Swipe left or right –</p>
-				<h2 class="modal-title">Page {{$index + 1}}</h2>
+				<h2 class="modal-page">Page {{$index + 1}}</h2>
 			</div>
 		</div>
 
