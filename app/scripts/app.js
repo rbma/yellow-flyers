@@ -18,6 +18,9 @@ angular
     'adaptive.detection'
   ])
   .config(function ($routeProvider, $anchorScrollProvider) {
+    
+    console.log('BUGS TO REPORT? SEND A MESSAGE TO JAMES@REDBULLMUSICACADEMY.COM');
+
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',

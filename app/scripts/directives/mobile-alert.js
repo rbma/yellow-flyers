@@ -9,6 +9,7 @@
 angular.module('yellowFlyersApp').directive('mobileAlert', ['mobileService', function (mobileService) {
 
 	return {
+		templateUrl: 'views/_alert.html',
 		restrict: 'EA',
 		link: function postLink($scope) {
 
