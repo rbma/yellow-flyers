@@ -227,6 +227,9 @@
 					font-family: 'Clan';
 					text-align: center;
 					-webkit-font-smoothing: antialiased;
+					&:hover{
+						@include transform(translateX(0));
+					}
 				}
 				img{
 					max-width: 100px;

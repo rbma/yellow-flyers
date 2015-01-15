@@ -17,7 +17,7 @@ angular
     'duScroll',
     'adaptive.detection'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $anchorScrollProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -66,4 +66,6 @@ angular
       .otherwise({
         redirectTo: '/'
       });
+
+    $anchorScrollProvider.disableAutoScrolling();
   });
