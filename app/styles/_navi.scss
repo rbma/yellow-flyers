@@ -1,3 +1,5 @@
+
+
 .navi{
 	height: 50px;
 	background: white;
@@ -28,6 +30,7 @@
 		top: 0;
 		border: 0;
 	}
+
 	.fb-like{
 		z-index: 999;
 		position: fixed !important;
@@ -40,11 +43,11 @@
 		}
 	}
 
-	.twitter-share-button{
-		z-index: 9999;
-		position: absolute !important;
-		bottom: 15px;
-		right: 132px;
+	.twitter-share{
+		z-index: 999;
+		position: fixed !important;
+		bottom: 5px;
+		right: 210px;
 		height: 32px;
 		width: 32px;
 		@media (max-width: $phone){
@@ -140,22 +143,20 @@
 	z-index: 98;
 	height: 100%;
 	width: 100%;
-	bottom: 50px;
+	bottom: 0;
 	left: 0;
-	background: rgba(255,255,255,0.95);
+	background: rgba(255,255,255,0.98);
 	text-align: center;
 	@include display(flex);
 	@include flex-direction(column);
 	@include align-items(center);
 	@include justify-content(center);
-	@include transform(translateY(110%) translateZ(0));
+	@include transform(translateY(-110%) translateZ(0));
 	@include transition(transform .4s ease-in-out);
 	cursor: pointer !important;
 	color: black;
 	@media (max-width: $phone){
-		background: rgba(255,255,255,1);
-		bottom: 0;
-		@include transform(translateX(100%) translateY(0) translateZ(0));
+		// @include transform(translateX(100%) translateY(0) translateZ(0));
 	}
 	
 
@@ -167,16 +168,6 @@
 
 	a{
 		position: relative;
-		.logo{
-			position: relative;
-			width: 70px;
-			height: 50px;
-			z-index: 99;
-			margin: 0;
-			color: black;
-			background: url(../images/bulls.svg) no-repeat center center;
-			background-size: contain;
-		}
 		@media (max-width: $phone){
 			margin-top: 70px;
 			.logo{
@@ -194,22 +185,23 @@
 			margin-top: 0;
 		}
 
-		a{
-			color:black;
+		a{	color: black;
 			text-decoration: none;
 			li{
 				font-size: 2em;
 				line-height: 1;
 				width: 100%;
-				text-align: left;
+				text-align: center;
 				@include backface-visibility(hidden);
+				font-family: 'HelveticaRounded';
 				margin-bottom: 10px;
 				// text-transform: uppercase;
 				font-weight: bold;
 				letter-spacing: -1px;
-				@include transition(all .2s linear);
+				padding: 1px 5px;
+				@include box-sizing(border-box);
 				@media (max-width: $tab){
-					font-size: 3em;
+					font-size: 2em;
 					@media (orientation: landscape){
 						font-size: 2em;
 					}
@@ -221,10 +213,12 @@
 					}
 				}
 				&.about-list{
-					border-bottom: 5px solid black;
+					text-transform: uppercase;
+					text-align: center;
 				}
 				&:hover{
-					@include transform(translateX(-5px));
+					background: black;
+					color: white;
 				}
 				&.lowercase{
 					margin-top: 30px;
@@ -234,6 +228,7 @@
 					-webkit-font-smoothing: antialiased;
 					&:hover{
 						@include transform(translateX(0));
+						background: transparent;
 					}
 				}
 				img{

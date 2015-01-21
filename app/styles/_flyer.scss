@@ -32,10 +32,10 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: black;
+	background-color: white;
 	z-index: 7;
 	font-weight: lighter;
-	color: white;
+	color: black;
 	@include display(flex);
 	@include flex-direction(column);
 	@include justify-content(center);
@@ -149,18 +149,20 @@
 		padding: 10px;
 		margin-left: 20px;
 		max-width: 50%;
-		font-size: 3em;
+		font-size: 2em;
 		line-height: 1;
 		font-weight: lighter;
 		border: 5px solid black;
 		@include box-sizing(border-box);
 		box-shadow: 2px 2px 5px black;
+		font-family: 'HelveticaRounded';
 		&:hover{
 			background-color: white;
 			color: black;
 		}
 		@media (min-width: $widescreen){
 			width: 30%;
+			font-size: 3em;
 		}
 		@media (max-width: $tab){
 			font-size: 1.7em;

@@ -64,7 +64,7 @@ angular.module('yellowFlyersApp')
           break;
 
           case '/page9':
-          spread = [160, self.arrayLength - 1];
+          spread = [160, self.arrayLength];
           page = 9;
           break;
 

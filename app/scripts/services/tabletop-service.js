@@ -42,6 +42,7 @@ angular.module('yellowFlyersApp').factory('tabletopService', ['$http', function 
     storeLength: function(arr){
       var self = this;
 
+
       self.tableLength = arr.length;
 
       //service is officially set up
@@ -56,6 +57,7 @@ angular.module('yellowFlyersApp').factory('tabletopService', ['$http', function 
 
       //get right object
       var data = dataObject;
+
 
 
 
