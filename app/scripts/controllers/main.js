@@ -39,8 +39,8 @@ angular.module('yellowFlyersApp').controller('MainCtrl', [
 
 			var flyers, globals, flyerLength, splitAmount, allFlyers;
 
-			flyers = data.data.Flyers.elements;
-			globals = data.data.Globals.elements[0];
+			flyers = data.Flyers.elements;
+			globals = data.Globals.elements[0];
 
 			flyerLength = flyers.length;
 

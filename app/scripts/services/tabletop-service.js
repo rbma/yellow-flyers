@@ -9,7 +9,7 @@
  * # tabletopService
  * Factory in the yellowFlyersApp.
  */
-angular.module('yellowFlyersApp').factory('tabletopService', ['$http', function ($http) {
+angular.module('yellowFlyersApp').factory('tabletopService', ['$http', '$q', function ($http, $q) {
 
 
   var tableTop = {
@@ -25,14 +25,26 @@ angular.module('yellowFlyersApp').factory('tabletopService', ['$http', function 
 
     init: function(){
 
+      var deferred = $q.defer();
 
-      var promise = $http({
-        method: 'GET',
-        url: 'https://s3.amazonaws.com/yellow-flyers-data/flyers.json',
-        dataType: 'application/json'
+      $http.get('http://s3.amazonaws.com/yellow-flyers-data/flyers.json').success(function(data){
+        console.log(data);
+        deferred.resolve(data);
+      }).error(function(err){
+        console.log(err);
+        deferred.reject(err);
       });
 
-      return promise;
+
+
+
+      // var promise = $http({
+      //   method: 'GET',
+      //   url: 'https://s3.amazonaws.com/yellow-flyers-data/flyers.json',
+      //   dataType: 'application/json'
+      // });
+
+      return deferred.promise;
 
     },
 
